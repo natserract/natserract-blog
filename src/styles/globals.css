@@ -2,15 +2,30 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 300;
+  font-family: serif;
+  color: #224326;
+  line-height: 1.3em;
+}
+
+body {
+  background-color: #dcf1d5;
+  color: #224326;
+  font-size: 16px;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: #006600;
+  font-size: 14px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

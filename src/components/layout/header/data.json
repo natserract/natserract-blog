@@ -1,0 +1,16 @@
+{
+    "socialMediaItems":[
+      {
+        "iconName":"github",
+        "href":"https: //github.com/natserract"
+      },
+      {
+        "iconName":"linkedin",
+        "href":"https: //www.linkedin.com/in/alfinsurya/"
+      },
+      {
+        "iconName":"envelope",
+        "href":"mailto:alfins132@gmail.com"
+      }
+    ]
+  }

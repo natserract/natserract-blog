@@ -18,7 +18,7 @@ const breakpoints = {
 
 /* Palette */
 const colors = {
-  primary: "#0092FF",
+  primary: "#047a04",
   secondary: "#FF6B90",
   darkRed: "#6c201f",
   pink: "#f8aaaa",
@@ -26,7 +26,6 @@ const colors = {
   palePink: "#fdfafa",
   orange: "#f18f01",
   yellow: "#fcba03",
-  green: "#00d500",
   blue: "#2196f3",
   black: "#000000",
   grey: "#eee",
@@ -58,8 +57,22 @@ const palette = {
   },
 };
 
+const typography = {
+  fontFamily: 'Serif',
+  h1: {
+    fontFamily: 'Serif',
+  },
+  h2: {
+    fontFamily: 'Serif',
+  },
+  h3: {
+    fontFamily: 'Serif',
+  },
+}
+
 export default {
   globalStyle,
   breakpoints,
   palette,
+  typography,
 };

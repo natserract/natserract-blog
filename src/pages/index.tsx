@@ -2,24 +2,29 @@ import React from 'react'
 import { getAllPosts } from '../../lib';
 import { blogConfig as config } from '../config/blog.config';
 import { makeStyles } from '@material-ui/core/styles';
+import Layout from '../components/layout'
+import Posts from '../components/posts'
+
 import styles from './styles';
+interface PropsI {
+  allPosts?: any
+}
 
 const useStyles = makeStyles(styles);
 
-interface HomePropsI {
-    allPosts?: any
-}
-
-const Home: ComponentType<HomePropsI> = ({ 
-  allPosts 
-}: HomePropsI) => {
+const Home: ComponentType<PropsI> = ({ allPosts }: PropsI) => {
     const classes = useStyles();  
 
+    if (!allPosts && allPosts.length < 1) {
+      return <>Data is not ready (is undefined?)</>
+    }
+
     return (
-        <div>
-            <h2 className={classes.title}>Article</h2>
-            { JSON.stringify(allPosts) }
-        </div>
+        <Layout>
+            <Posts 
+              data={allPosts}
+            />
+        </Layout>
     )
 }   
 

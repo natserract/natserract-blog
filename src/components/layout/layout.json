@@ -1,0 +1,16 @@
+{
+    "menuItems": [
+        {
+            "name": "Home",
+            "path": "/"
+        },
+        {
+            "name": "About",
+            "path": "/about"
+        },
+        {
+            "name": "Contributing",
+            "path": "/contributing"
+        }
+    ]
+}
