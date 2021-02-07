@@ -1,9 +1,13 @@
+import { useEffect, useRef } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Header from './header'
 import Footer from './footer'
 import styles from './styles'
 import jsonData from './layout.json'
 import moment from 'moment'
+import hljs from 'highlight.js';
+import ReactDOM from 'react-dom'
+
 interface PropsI {
     children: React.ReactNode
 }
@@ -18,9 +22,20 @@ const footerContent = `${config.year} ${config.author}. Kecuali dinyatakan lain,
 
 const Layout: ComponentType<PropsI> = ({ children }: PropsI) => {
     const classes = useStyles()
+    const ref = useRef(null)
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const accessNode = ReactDOM.findDOMNode(ref.current)
+
+            if (accessNode) accessNode.querySelectorAll('pre code').forEach((block: any) => {
+                hljs.highlightBlock(block);
+            })
+        }
+    }, [])
 
     return (
-        <main className={classes.mainLayout}>
+        <main className={classes.mainLayout} ref={ref}>
             <Header
                 title="Natserract"
                 menuItems={jsonData?.menuItems}
@@ -30,7 +45,7 @@ const Layout: ComponentType<PropsI> = ({ children }: PropsI) => {
                 {children}
             </div>
 
-            <Footer content={footerContent}/>
+            <Footer content={footerContent} />
         </main>
     )
 }

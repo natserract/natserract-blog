@@ -7,7 +7,7 @@ import Posts from '../components/posts'
 
 import styles from './styles';
 interface PropsI {
-  allPosts?: any
+  allPosts?: Array<any>
 }
 
 const useStyles = makeStyles(styles);
@@ -21,9 +21,7 @@ const Home: ComponentType<PropsI> = ({ allPosts }: PropsI) => {
 
     return (
         <Layout>
-            <Posts 
-              data={allPosts}
-            />
+          <Posts data={allPosts}/>
         </Layout>
     )
 }   

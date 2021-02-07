@@ -2,6 +2,10 @@ export default (theme) => ({
   posts: {
     display: "block",
     marginBottom: "15px",
+
+    '& .cursor-loading': {
+      cursor: 'progress',
+    }
   },
   postsHeadContainer: {
     display: 'flex',

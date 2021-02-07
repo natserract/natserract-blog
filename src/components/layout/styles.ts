@@ -18,6 +18,6 @@ export default (theme) => ({
     },
 
     contentContainer: {
-
+        paddingBottom: '40px'
     }
 })

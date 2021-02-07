@@ -5,7 +5,7 @@ export default (theme) => ({
       marginTop: '15px',
   },
   header: {
-    marginBottom: '15px'
+    marginBottom: '20px'
   },
   socialMedia: {
     display: 'flex',
@@ -66,6 +66,7 @@ export default (theme) => ({
         },
         
         "& > a": {
+            fontSize: '14px',
             textDecoration: 'none',
         }
     }
