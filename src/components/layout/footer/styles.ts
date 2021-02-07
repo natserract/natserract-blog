@@ -6,7 +6,7 @@ export default (theme) => ({
         position: 'absolute',
         width: '100%',
         left: '50%',
-        bottom: '20px',
+        bottom: '23px',
         transform: 'translateX(-50%)',
 
         [theme.breakpoints.only('xs')]: {
