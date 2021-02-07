@@ -24,7 +24,7 @@ const Post: ComponentType<PostProps> = ({ post }: PostProps) => {
     return (
         <Layout>
              <h1 className={classes.postTitle}>{post?.title}</h1> 
-             <article dangerouslySetInnerHTML={{ __html: post?.content || null }} />
+             <article className="post-content" dangerouslySetInnerHTML={{ __html: post?.content || null }} />
         </Layout>
     )
 }
