@@ -1,6 +1,6 @@
 ---
 title: "Getting started with MDX"
-date: "2020-10-10"
+date: "2021-10-10"
 author: "Alfin Surya"
 excerpt: "Making this in MDX for simplicity and flexibility"
 ---

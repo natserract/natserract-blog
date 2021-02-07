@@ -2,20 +2,18 @@ import { makeStyles } from '@material-ui/core/styles'
 import styles from './styles'
 
 interface PropsI {
-
+    content: string
 }
 
 const useStyles = makeStyles(styles);
 
-const Footer: ComponentType<{PropsI}> = ({
-
-}: PropsI) => {
+const Footer: ComponentType<PropsI> = ({ content }: PropsI) => {
     const classes = useStyles()
 
     return  (
-        <div>
-            Footer
-        </div>
+        <footer className={classes.footer}>
+            <span>{content}</span>
+        </footer>
     )
 }
 

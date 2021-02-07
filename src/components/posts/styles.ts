@@ -1,7 +1,7 @@
 export default (theme) => ({
   posts: {
     display: "block",
-    marginBottom: "5px",
+    marginBottom: "15px",
   },
   postsHeadContainer: {
     display: 'flex',
@@ -16,6 +16,6 @@ export default (theme) => ({
   postDate: {
     fontSize: '13px',
     opacity: '.5',
-    marginLeft: '10px',
+    marginLeft: '8px',
   }
 });
