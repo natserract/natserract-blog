@@ -10,6 +10,9 @@ export default (theme) => ({
   socialMedia: {
     display: 'flex',
     alignItems: 'center',
+    listStyle: 'none',
+    padding: '0',
+    margin: '0',
 
     "& li": {
       paddingRight: '15px',
@@ -55,6 +58,9 @@ export default (theme) => ({
   menuLists: {
     display: "flex",
     justifyContent: "space-between",
+    listStyle: 'none',
+    padding: '0',
+    margin: '0',
 
     "& li": {
         [theme.breakpoints.up('sm')]: {

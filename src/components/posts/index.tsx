@@ -27,7 +27,7 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
     }
 
     return (
-        <ul className="posts-container">
+        <ul className={classes.postListsContainer}>
             { data && data.map((item) => {
                 const { title, excerpt, date, slug } = item;
 

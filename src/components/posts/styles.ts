@@ -21,5 +21,8 @@ export default (theme) => ({
     fontSize: '13px',
     opacity: '.5',
     marginLeft: '8px',
+  },
+  postListsContainer: {
+    paddingLeft: '0'
   }
 });
