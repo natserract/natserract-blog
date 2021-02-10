@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles'
+import styles from './styles'
 
 interface PropsI {
     data: {
@@ -8,37 +9,24 @@ interface PropsI {
     }
 }
 
-const useStyles = makeStyles((theme) => ({
-    title: {
-        marginBottom: '30px'
-    },
-    content: {
-        "& blockquote": {
-            borderLeft: 'solid 4px #d2d6db',
-            padding: '0 0 0 20px',
-            margin: '0 0 15px',
-        },
-        "& code:not(.hljs)": {
-            padding: '.2em .4em',
-            margin: '0',
-            fontSize: '85%',
-            backgroundColor: 'rgba(0, 0, 0, 0.1)',
-            borderRadius: '3px',
-        }
-    }
-}));
+const useStyles = makeStyles(styles);
 
 const Content: ComponentType<PropsI> = ({ data }: PropsI) => {
     const classes = useStyles()
 
     const RenderCoverImg = () => {
         return data?.coverImage  ?<img className="post-cover-img" src={data?.coverImage} /> : null
-   }
+    }
+
+    const RenderTitle = () => {
+        return data?.title ? <h1 className={classes.title}>{data?.title}</h1> : null
+    }
+
 
     return (
         <>
             <RenderCoverImg />
-            <h1 className={classes.title}>{data?.title}</h1>
+            <RenderTitle />
             <article className={classes.content} 
                 dangerouslySetInnerHTML={{ __html: data?.content || null }} 
             />

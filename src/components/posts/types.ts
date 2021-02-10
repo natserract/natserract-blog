@@ -1,4 +1,3 @@
-
 export interface PropsI {
     data: Array<PostMetaI>
 }

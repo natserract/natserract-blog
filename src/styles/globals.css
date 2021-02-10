@@ -42,3 +42,8 @@ pre {
   /* word-wrap: break-word; */
   /* Internet Explorer 5.5+ */
 }
+
+::selection {
+  background: #dcf1d5;
+  color: #224326
+}
