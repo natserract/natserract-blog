@@ -4,16 +4,16 @@ import Header from './header'
 import Footer from './footer'
 import styles from './styles'
 import jsonData from './layout.json'
-import moment from 'moment'
 import hljs from 'highlight.js';
 import ReactDOM from 'react-dom'
+import getYear from 'date-fns/get_year'
 
 interface PropsI {
     children: React.ReactNode
 }
 
 const config = {
-    year: moment().year(),
+    year: getYear(new Date()),
     author: 'Alfin Surya',
 }
 

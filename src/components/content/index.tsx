@@ -15,7 +15,7 @@ const Content: ComponentType<PropsI> = ({ data }: PropsI) => {
     const classes = useStyles()
 
     const RenderCoverImg = () => {
-        return data?.coverImage  ?<img className="post-cover-img" src={data?.coverImage} /> : null
+        return data?.coverImage ? <img className="post-cover-img" src={data?.coverImage} /> : null
     }
 
     const RenderTitle = () => {

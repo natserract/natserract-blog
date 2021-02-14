@@ -1,26 +1,20 @@
-import { useCallback, useState, useEffect } from 'react'
+import { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import styles from './styles'
 import { PropsI } from './types'
 import { generateKey } from '../../utils'
 import Link from 'next/link'
-import moment from 'moment'
+import { useLoadingIndicator } from '~/src/hooks'
+import format from 'date-fns/format'
 
 const useStyles = makeStyles(styles);
+const parseDate = (date: number | Date) => format(date, 'MMMM YYYY')
 
-const parseDate = (date: string) => moment(date).format('MMMM YYYY')
 const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
     const classes = useStyles()
-    const [state, setState] = useState(false)
 
-    const handlingClick = useCallback(() => {
-        setState(true)
-    }, [])
-
-    useEffect(() => {
-        if (state) document.body.classList.add('loading-indicator')
-        return () =>  document.body.classList.remove('loading-indicator')
-    }, [state])
+    const [loadingState, setLoadingState] = useState(false)
+    const loadingIndicator = useLoadingIndicator(loadingState, setLoadingState)
 
     if (!data) {
         return <>Data must be set!</>
@@ -35,7 +29,7 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
                     <li key={generateKey()} className={classes.posts}>
                         <div className={classes.postsHeadContainer}>
                             <Link href={`post/${slug}`}>
-                                <a onClick={handlingClick}>{title}</a>
+                                <a onClick={loadingIndicator}>{title}</a>
                             </Link>
                             <span className={classes.postDate}>{parseDate(date)}</span>
                         </div>
