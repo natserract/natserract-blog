@@ -82,7 +82,7 @@ export default (theme) => ({
         },
         
         "& > a": {
-            fontSize: '14px',
+            fontSize: '15px',
             textDecoration: 'none',
         }
     }

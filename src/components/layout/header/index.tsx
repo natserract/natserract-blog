@@ -23,7 +23,7 @@ const Header: ComponentType<PropsI> = ({ title, menuItems }: PropsI) => {
                         color='primary'
                         children={title}
                     />
-                    <span className={classes.subTitle}>Thoughts and links about everything</span>
+                    <span className={classes.subTitle}>Jarrib walaahizh takun ‘arifan</span>
                 </a>
 
                 <div className={classes.navigationContainer}>

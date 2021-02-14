@@ -9,6 +9,10 @@
             "path": "/about"
         },
         {
+            "name": "Projects",
+            "path": "/projects"
+        },
+        {
             "name": "Contributing",
             "path": "/contributing"
         }

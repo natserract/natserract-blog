@@ -29,11 +29,30 @@ export default (theme) => ({
             }
         },
         "& small": {
+            fontSize: '16px',
             display: 'block',
             opacity: '0.5',
         },
         "& ol": {
             padding: '0 0 0 20px',
         },
+        "& .section-group-about": {
+            margin: "0 0 35px",
+
+            "&.noMargin": {
+                margin: 0,
+            },
+            "& ul": {
+                padding: '0',
+                listStyleType: 'none',
+            },
+
+            "& strong": {
+                fontWeight: 'bold',
+            }
+        },
+        "& .container-sm": {
+            maxWidth: '500px',
+        }
     }
 })

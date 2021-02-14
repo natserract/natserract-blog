@@ -1,22 +1,22 @@
 ---
-title: "Functional Programming in Rust"
-date: "2020-04-28"
+title: "Functional Programming di Rust"
+date: "2020-04-22"
 author: "Alfin Surya"
-excerpt: "Functional programming in Rust"
+excerpt: "Mencoba paradigma pemrogaman fungsional di Rust"
 coverImage: 'https://res.cloudinary.com/practicaldev/image/fetch/s--lNRD-vey--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/2y19pxhcq4ltvzq569mv.png'
 ---
 
-A month ago when I first developed a non-commercial project using [ReasonML](https://reasonml.github.io/), I got a new experience, is a *functional programming*. This language is an alternative syntax from [OCaml](https://ocaml.org/). OCaml itself is a purely functional language, the features offered are interesting. For example: type inference, strongly type system, algebraic datatypes, and many more. Interesting right?
+Sebulan lalu ketika pertama kali mendevelop sebuah non komersial project menggunakan [ReasonML](https://reasonml.github.io/), saya mendapat sebuah pengalaman baru, yaitu *functional programming*. Bahasa ini merupakan alternative syntax dari [OCaml](https://ocaml.org/). OCaml sendiri merupakan purely functional language, fitur-fitur yang ditawarkan menarik. Contohnya: type inference, strongly type system, algebraic datatypes, dan masih banyak lagi. Menarik bukan?
 
-Now after trying that, I began to interest functional programming. Finally i tried to implement the functional paradigm in a different language, namely [Rust](http://rustlang.org/).
+Nah setelah mencoba language tersebut, saya mulai interest dengan namanya functional programming. Usut punya usut, akhirnya saya coba mengimplementasikan paradigma tersebut di bahasa berbeda yaitu [Rust](http://rustlang.org/). 
 
 ### Introduction
-Functional programming (FP) is a programming paradigm which allows us to write expressive, concise, and elegant code. Functional programming also helps developers to manage code so that it doesn't **DRY (Don't Repeat Yourself)** that's mean doesn't write the same code over and over again. Other functional languages for example like Lisp, Clojure, Erlang, Haskell, R, and many more.
+Functional programming (FP) adalah paradigma pemrograman dimana memungkinkan kita untuk menulis kode program yang ekspresif, ringkas, dan elegan. Functional programming juga membantu developer untuk mengatur kodenya agar tidak **DRY (Don't Repeat Yourself)** alias tidak menulis kode yang sama berulang-ulang kali. Functional language lainnya contohnya seperti Lisp, Clojure, Erlang, Haskell, R, dan masih banyak lagi.
 
 ### Okay, but why Rust?
-The question is, is a **Rust functional language?** the answer is, no. Although Rust himself was inspired by **ML family of language**, Rust it's not functional. But fortunately Rust has several features that are similar to other functional languages, such as: algebraic datatypes, expressive types, and others.
+Pertanyaannya, apakah **Rust functional programming language?** jawabannya, tidak. Walaupun Rust sendiri terinspirasi dari **ML family of language**, dia bukan functional. Tetapi beruntungnya Rust mempunyai beberapa fitur yang mirip dengan bahasa fungsional lainnya, seperti: algebraic datatypes, expressive types, dan lain-lain. 
 
-### Tables of Contents
+### Lists yang akan dibahas
 * Primitive Types
 * Closures
 * Currying
@@ -24,54 +24,52 @@ The question is, is a **Rust functional language?** the answer is, no. Although 
 * Higher Order Functions(HOF)
 * Lazy evaluations
 
-
-## <a id="primitive"></a>Primitive Types
-In order not to jump right away, it would be nice if we had to know several data types in Rust. This also applies to all programming languages.
+## Primitive Types
+Agar tidak langsung loncat lebih jauh, alangkah baiknya kita harus mengetahui beberapa tipe data yang ada di Rust. Ini juga berlaku untuk semua bahasa pemrogaman.
 
 ### Booleans
-The most basic datatype is the simple `true / false` value, in Rust it's called `bool`
-
+Jenis tipe data yang paling sederhana adalah nilai `true/false`, di Rust ini disebut `bool`
 ```rust
 let x = true;
 let y: bool = false;
 ```
 
 ### Char
-The `char` data type has a single Unicode value. We can use `char` data type with a single tick (`'`)
+Jenis tipe data `char` memiliki nilai single Unicode. Kita bisa menggunakan tipe data `char` dengan single tick (`'`)
 ```rust
 let x = 'x';
 let two_hearts = '💕';
 ```
-Unlike some other languages, `char` in Rust is not one byte, but four.
+Tidak seperti beberapa bahasa lain, `char` di Rust nilainya bukan satu byte, tetapi empat.
 
 ### Numeric Types
-Rust has several numeric type category variants, such as signed(`i`) dan unsigned(`u`), fixed size (`8`, `16`, `32`, `64`) dan variable(`isize`, `usize`) types.
+Rust mempunyai beberapa varian kategori tipe numeric, seperti signed(`i`) dan unsigned(`u`), fixed size (`8`, `16`, `32`, `64`) dan variable(`isize`, `usize`) types.
 ```rust
 let x = 42; // `x` has type `i32`.
 let y = 1.0; // `y` has type `f64`.
 ```
 
 ### Arrays
-Like many other programming languages, Rust also has an array data type. By default, arrays in Rust can't be changed. Unless you initialize it with [`mut`](https://doc.rust-lang.org/rust-by-example/scope/borrow/mut.html)
+Seperti banyak bahasa pemrograman lain, Rust juga memiliki tipe data array. Secara default, array di Rust tidak dapat diubah. Kecuali kamu menginisializenya dengan [`mut`](https://doc.rust-lang.org/rust-by-example/scope/borrow/mut.html)
 ```rust
 let a = [1, 2, 3]; // a: [i32; 3]
 let mut m = [1, 2, 3]; // m: [i32; 3]
 ```
 
 ### Functions
-Functions also have data types! For example like:
+Function juga memiliki tipe data! Contohnya seperti ini:
 ```rust
 fn foo(x: i32) -> i32 { x }
 let x: fn(i32) -> i32 = foo;
 ```
-In this case, the `foo ()` function has a return type `numeric: i32`, and returns the value` x`.
+Dalam case ini, fungsi `foo()` memiliki return type `numeric: i32`, dan mengembalikan nilai `x`.
 
-> For more information, you can check here: [primitive types](https://doc.rust-lang.org/1.29.0/book/first-edition/primitive-types.html)
+> Untuk selengkapnya kamu bisa cek disini: [primitive types](https://doc.rust-lang.org/1.29.0/book/first-edition/primitive-types.html)
 
-## <a id="closures"></a>Closures
+## Closures
 >*"Closure is a mechanism by which an inner function will have access to the variables defined in its outer function’s lexical scope even after the outer function has returned."* 
 
-Up to here understand? in short *closures* is an inner function that has access to retrieve a value throughout the scope both inside and outside.
+Sampai disini paham? singkatnya *closures* adalah sebuah inner function yang mempunyai akses untuk mengambil suatu nilai diseluruh scopenya baik diluar maupun didalam.
 
 ```rust
 fn fmt(prev_str: &str) -> String {
@@ -89,16 +87,17 @@ fn fmt(prev_str: &str) -> String {
 let r_txt = "Lorem ipsum ";
 assert_eq!("Lorem ipsum dolor sit amet", fmt(r_txt));
 ```
-In this case, in `new_str.push_str ()` section where `closure_annotated` accesses the` new_str` variable then changes the value and returns it outside the scope.
+Dicase ini, dibagian `new_str.push_str()` dimana `closure_annotated` mengakses variable `new_str` lalu merubah nilai dalam variabel tersebut dan mereturn nya diluar scope. 
 
-## <a id="currying"></a>Currying
-Currying is a process in functional programming in which we can transform a function with multiple arguments into a sequence of nesting functions. It returns a new function that expects the next argument inline.
 
-```rust
+## Currying
+Currying adalah teknik functional programming di mana kita dapat mengubah suatu fungsi dengan beberapa argumen menjadi urutan fungsi bersarang. Ini mengembalikan fungsi baru yang mengharapkan argumen inline berikutnya.
+
+```sh
 #[derive(Debug)]
 struct States<'a> {
     a: &'a i32,
-    b: &'a i32,
+    b: &'a i32
 }
 
 trait Currying {
@@ -127,11 +126,11 @@ let r2 = r1(5);
 assert_eq!(500, r2);
 
 ```
-There are 2 parameters here, namely `a`,`b` where each has a numeric data type, then in `trait` section is a *function interface*, a place for initializing functions. These traits are similar to [typescript interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html).
+Terdapat 2 parameter disini, yaitu `a`, `b` dimana masing-masing mempunyai tipe data numeric, lalu dibagian `trait` adalah sebuah *function interfaces*, tempat untuk inisialisasi function. Traits ini mirip seperti [typescript interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html).
 
 
-## <a id="recursion"></a>Recursion
-Simply, recursion is a `procedure / function` that calls itself, which functions to create / process the data that you want to return.
+## Recursion
+Sederhananya recursion adalah suatu `procedure/function` yang memanggil dirinya sendiri, dimana fungsinya untuk membuat/mengolah data yang akan ingin ditampilkan.
 
 ```rust
 #[allow(non_camel_case_types)] 
@@ -158,10 +157,11 @@ impl Factor for i64_t {
 let result: i64_t = Factor::factorial(3); 
 assert_eq!(6, result);
 ```
-This is a factorial function, where if the argument value of the parameter num `! == 0`, then that value will be multiplied by each number below it. For example `(5! = 5 * 4 * 3 * 2 * 1 = 120)`.
+Ini adalah sebuah fungsi faktorial, dimana jika nilai argumen dari parameter num `!== 0`, maka nilai tersebut akan dikalikan dengan setiap angka dibawahnya. Misalnya `(5! = 5 * 4 * 3 * 2 * 1 = 120)`.
 
-## <a id="hof"></a>Higher Order Functions(HOF)
-Higher order functions are functions that use other functions as parameters or as a result of returns.
+
+## Higher Order Functions(HOF)
+Higher order function adalah fungsi yang menggunakan fungsi lain sebagai parameter atau sebagai hasil return.
 ```rust
 fn map<F>(arr: &[i32], func: F) -> Vec<i32> where F: Fn(&i32) -> i32{
     let mut new_array: Vec<i32> = vec![];
@@ -177,10 +177,11 @@ let result = map(&lists, |i| *i + 2);
 
 assert_eq!(vec![3, 6, 11, 18], result)
 ```
-So `func` and` map` are higher order functions, where this function is used to change every contents of an array. The return result is a new array of the same length as the modified `originalArray`.
+Jadi `func` dan `map` merupakan higher order function, dimana fungsi ini digunakan untuk mengubah setiap isi dari suatu array. Hasil returnnya adalah array baru dengan length yang sama dengan `originalArray` yang diubah.
 
-## <a id="lazy"></a>Lazy Evaluation
-Lazy evaluation or non-strict evaluation is a process of holding the evaluation of an `expression/function` until the value is needed. The goal is to avoid repeated evaluations.
+
+## Lazy Evaluation
+Lazy evaluation atau non-strict evaluation adalah sebuah proses menahan evaluasi dari sebuah `expression/function` hingga nilainya diperlukan. Tujuannya agar menghindari evaluasi berulang.
 
 ```rust
 struct State {
@@ -221,11 +222,13 @@ assert_eq!(400, val.add_or_multiply(false));
 ```
 
 
-## Functional Programming References
+## Referensi
 * [Functional Programming in Go](https://deepu.tech/functional-programming-in-go/)
 * [Eloquent Javascript Functional Programming](https://eloquentjavascript.net/1st_edition/chapter6.html)
 * [Closures Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) 
 
 
 ## Motivation
-Functional programming (FP) provides many advantages, and its popularity has been increasing as a result. However, each programming paradigm comes with its own unique jargon and FP is no exception. By providing a glossary, i hope to make learning FP easier✌️
+Functional Programming (FP) memiliki banyak keuntungan, dan popularitasnya terus meningkat. Namun, setiap paradigma pemrograman dilengkapi fitur dan keunikan tersendiri dan FP tidak terkecuali. Semoga dengan adanya tulisan ini, dapat memberikan manfaat bagi pembacanya. Sekian dari saya terimakasih ✌️
+
+Repository: [github](https://github.com/natserract/rustfp)

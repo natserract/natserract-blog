@@ -8,19 +8,15 @@ import hljs from 'highlight.js';
 import ReactDOM from 'react-dom'
 import getYear from 'date-fns/get_year'
 
-interface PropsI {
-    children: React.ReactNode
-}
-
 const config = {
     year: getYear(new Date()),
     author: 'Alfin Surya',
 }
 
 const useStyles = makeStyles(styles);
-const footerContent = `${config.year} ${config.author}. Kecuali dinyatakan lain, posting ini tersedia di bawah Lisensi Atribusi Creative Commons.`
+const footerContent = `${config.year} ${config.author}. Kecuali dinyatakan lain, posting ini tersedia di bawah Lisensi saya sendiri.`
 
-const Layout: ComponentType<PropsI> = ({ children }: PropsI) => {
+const Layout = (props) => {
     const classes = useStyles()
     const ref = useRef(null)
 
@@ -35,14 +31,14 @@ const Layout: ComponentType<PropsI> = ({ children }: PropsI) => {
     }, [])
 
     return (
-        <main className={classes.mainLayout} ref={ref}>
+        <main className={classes.mainLayout} ref={ref} {...props}>
             <Header
                 title="Natserract"
                 menuItems={jsonData?.menuItems}
             />
 
             <div className={classes.contentContainer}>
-                {children}
+                {props.children}
             </div>
 
             <Footer content={footerContent} />
