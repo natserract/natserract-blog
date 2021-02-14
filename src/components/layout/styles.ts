@@ -9,7 +9,7 @@ export default (theme) => ({
     position: "relative",
 
     [theme.breakpoints.down("sm")]: {
-      maxWidth: "92%",
+      maxWidth: "95%",
     },
 
     [theme.breakpoints.only("xs")]: {
@@ -18,7 +18,7 @@ export default (theme) => ({
   },
 
   contentContainer: {
-    paddingBottom: "40px",
+    paddingBottom: "5em",
 
     "& img": {
       display: "block",

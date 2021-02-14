@@ -3,6 +3,11 @@ export default (theme) => ({
       display: 'flex',
       justifyContent: 'space-between',
       marginTop: '15px',
+
+      [theme.breakpoints.only("xs")]: {
+        flexDirection: 'column',
+        alignItems: 'center',
+      }
   },
   header: {
     marginBottom: '20px'
@@ -13,6 +18,10 @@ export default (theme) => ({
     listStyle: 'none',
     padding: '0',
     margin: '0',
+
+    [theme.breakpoints.only("xs")]: {
+      margin: '10px 0 0',
+    },
 
     "& li": {
       paddingRight: '15px',
@@ -42,6 +51,7 @@ export default (theme) => ({
       [theme.breakpoints.only("xs")]: {
         display: "block",
         textAlign: "center",
+        fontSize: '32px',
       },
     },
   },

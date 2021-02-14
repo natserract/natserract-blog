@@ -1,6 +1,11 @@
 export default (theme) => ({
     title: {
-        marginBottom: '30px'
+        lineHeight: '1.2',
+        marginBottom: '20px',
+
+        [theme.breakpoints.only("xs")]: {
+
+        },
     },
     content: {
         "& blockquote": {
@@ -26,6 +31,9 @@ export default (theme) => ({
         "& small": {
             display: 'block',
             opacity: '0.5',
+        },
+        "& ol": {
+            padding: '0 0 0 20px',
         },
     }
 })

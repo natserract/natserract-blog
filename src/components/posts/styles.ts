@@ -3,13 +3,21 @@ export default (theme) => ({
     display: "block",
     marginBottom: "15px",
 
-    '& .cursor-loading': {
-      cursor: 'progress',
-    }
+    [theme.breakpoints.only("xs")]: {
+      marginBottom: "20px",
+    },
+
+    "& .cursor-loading": {
+      cursor: "progress",
+    },
   },
   postsHeadContainer: {
-    display: 'flex',
-    alignItems: 'flexStart',
+    display: "flex",
+    alignItems: "flex-start",
+
+    [theme.breakpoints.only("xs")]: {
+      flexDirection: "column-reverse",
+    },
 
     "& a": {
       display: "block",
@@ -18,11 +26,15 @@ export default (theme) => ({
     },
   },
   postDate: {
-    fontSize: '13px',
-    opacity: '.5',
-    marginLeft: '8px',
+    fontSize: "13px",
+    opacity: ".5",
+    marginLeft: "8px",
+
+    [theme.breakpoints.only("xs")]: {
+      margin: "0",
+    },
   },
   postListsContainer: {
-    paddingLeft: '0'
-  }
+    paddingLeft: "0",
+  },
 });
