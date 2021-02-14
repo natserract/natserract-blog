@@ -14,7 +14,8 @@ const config = {
 }
 
 const useStyles = makeStyles(styles);
-const footerContent = `${config.year} ${config.author}. Kecuali dinyatakan lain, posting ini tersedia di bawah Lisensi saya sendiri.`
+const footerContent =
+ `${config.year} ${config.author}. Kecuali dinyatakan lain, posting ini tersedia di bawah Lisensi saya sendiri.`
 
 const Layout = (props) => {
     const classes = useStyles()

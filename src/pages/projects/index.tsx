@@ -5,14 +5,10 @@ import Box from '@material-ui/core/Box'
 import Layout from '~/src/components/layout'
 import Content from '~/src/components/content'
 
-interface PostProps {
-    post?: any
-}
-
 // Path for markdown file
 const pathDirectory = '../src/pages/projects/_projects'
 
-const Projects: ComponentType<PostProps> = ({ post }: PostProps) => {
+const Projects = ({ post }) => {
     if (!post) {
         return <Box>Projects is undefined</Box>
     }
@@ -25,7 +21,7 @@ const Projects: ComponentType<PostProps> = ({ post }: PostProps) => {
 }
 
 export async function getStaticProps() {
-    const post: any = getPostBySlug(pathDirectory, [
+    const post: PostI = getPostBySlug(pathDirectory, [
         "title",
         "excerpt",
         "date",
@@ -36,7 +32,7 @@ export async function getStaticProps() {
         "coverImageAlt",
     ])
 
-    const content = await markdownToHtml(post.content || '')
+    const content = await markdownToHtml(post?.content || '')
 
     return {
         props: {
