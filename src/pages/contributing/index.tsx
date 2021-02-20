@@ -5,13 +5,9 @@ import Box from '@material-ui/core/Box'
 import Layout from '~/src/components/layout'
 import Content from '~/src/components/content'
 
-interface PostProps {
-    post?: any
-}
-
 const pathDirectory = '../src/pages/contributing/_contributing'
 
-const Contributing: ComponentType<PostProps> = ({ post }: PostProps) => {
+const Contributing = ({ post }) => {
     if (!post) {
         return <Box>Post is undefined</Box>
     }
@@ -24,7 +20,7 @@ const Contributing: ComponentType<PostProps> = ({ post }: PostProps) => {
 }
 
 export async function getStaticProps() {
-    const post: any = getPostBySlug(pathDirectory, [
+    const post: PostI = getPostBySlug(pathDirectory, [
         "title",
         "excerpt",
         "date",

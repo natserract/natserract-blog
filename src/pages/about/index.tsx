@@ -5,14 +5,10 @@ import Box from '@material-ui/core/Box'
 import Layout from '~/src/components/layout'
 import Content from '~/src/components/content'
 
-interface PostProps {
-    post?: any
-}
-
 // Path for markdown file
 const pathDirectory = '../src/pages/about/_about'
 
-const About: ComponentType<PostProps> = ({ post }: PostProps) => {
+const About = ({ post }) => {
     if (!post) {
         return <Box>Post is undefined</Box>
     }
@@ -25,7 +21,7 @@ const About: ComponentType<PostProps> = ({ post }: PostProps) => {
 }
 
 export async function getStaticProps() {
-    const post: any = getPostBySlug(pathDirectory, [
+    const post: PostI = getPostBySlug(pathDirectory, [
         "title",
         "excerpt",
         "date",

@@ -4,15 +4,11 @@ import { blogConfig as config } from '../config/blog.config';
 import { makeStyles } from '@material-ui/core/styles';
 import Layout from '../components/layout'
 import Posts from '../components/posts'
-
 import styles from './styles';
-interface PropsI {
-  allPosts?: Array<any>
-}
 
 const useStyles = makeStyles(styles);
 
-const Home: ComponentType<PropsI> = ({ allPosts }: PropsI) => {
+const Home = ({ allPosts }) => {
     const classes = useStyles();  
 
     if (!allPosts && allPosts.length < 1) {
@@ -27,7 +23,7 @@ const Home: ComponentType<PropsI> = ({ allPosts }: PropsI) => {
 }   
 
 export async function getStaticProps() {
-    const posts = getAllPosts([
+    const posts: Array<PostI> = getAllPosts([
         "title",
         "date",
         "slug",
