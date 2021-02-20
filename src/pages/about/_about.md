@@ -31,9 +31,11 @@ Productive when working with a range of languages including Javascript, TypeScri
     <li><small>Jakarta Province, Indonesia</small></li>
 </ul>
 
-As a frontend developer, primary role is in building user-facing web products, collaborate with UI/UX designer and backend developer to deliver the best product and user experience.
+Work remotely, as a front-end developer. Primary role is in building user-facing web products, collaborate with UI / UX designer and backend developer to deliver the best product and user experience. 
 
-Develop using modern JavaScript: Angular, React, CSS Preprocessors, webpack and many more.
+For 5 months I worked on two main projects, namely: **B2B UI / UX Platform**, and **Telkomsel CROX**. The technologies used include: Angular, Webpack, SASS, Web component, NgRx, JWT Authentication, etc.
+
+Company site: [https://salt.id/](https://salt.id/)
 </div>
 
 <div class="section-group-about">
@@ -43,7 +45,9 @@ Develop using modern JavaScript: Angular, React, CSS Preprocessors, webpack and 
     <li>Jan - Apr 2020 (Full-time)</li>
     <li><small>Bali Province, Indonesia</small></li>
 </ul>
-In this company, my responsibility is migration non WordPress site or existing site to a new host to the WordPress platform.
+At this company, my responsibility is to migrate thousands of non-WordPress sites or existing sites to a new host to the WordPress platform. While here I have been working very have fun, and the work culture is very good. Technologies used include: WordPress, Elementor, jQuery, CSS, etc.
+
+Company site: [https://fantasktic.com/](https://fantasktic.com/)
 </div>
 
 <div class="section-group-about">
@@ -53,7 +57,10 @@ In this company, my responsibility is migration non WordPress site or existing s
     <li>June - August 2018 (Internship)</li>
     <li><small>Bali Province, Indonesia</small></li>
 </ul>
-At Jeg Studio our goal is to built unique news and magazine WordPress themes and make it amazing-looking that are naturally easy to use and customize, without any compromise on performance.
+
+This is my **first job**. At Jeg Studio, my job is to build WordPress themes that are unique and make them look amazing that are naturally easy to use and customize, without compromising on performance. Its products are marketed on the [themeforest.net](https://themeforest.net/) site, which currently has reached **21,444 sales**.
+
+Company site: [https://jnews.io/](https://jnews.io/)
 </div>
 
 ## Contributions
