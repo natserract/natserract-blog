@@ -1,4 +1,9 @@
-export default (theme) => ({
+import {
+    Theme,
+    createStyles
+  } from "@material-ui/core/styles";
+
+export default (theme: Theme) => createStyles({
     footer: {
         fontSize: '13px',
         lineHeight: '1.3em',

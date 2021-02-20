@@ -1,4 +1,9 @@
-export default (theme) => ({
+import {
+  Theme,
+  createStyles
+} from "@material-ui/core/styles";
+
+export default (theme: Theme) => createStyles({
   mainLayout: {
     background: "rgb(255, 255, 255) none repeat scroll 0% 0%",
     maxWidth: "800px",
