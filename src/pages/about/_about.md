@@ -27,7 +27,7 @@ Productive when working with a range of languages including Javascript, TypeScri
 <ul>
     <li><strong>Salt</strong></li>
     <li>Frontend Developer</li>
-    <li>April 2020 - Sep 2020</li>
+    <li>Apr - Sep 2020</li>
     <li><small>Jakarta Province, Indonesia</small></li>
 </ul>
 
@@ -42,7 +42,7 @@ Company site: [https://salt.id/](https://salt.id/)
 <ul>
     <li><strong>Fantasktic, Inc</strong></li>
     <li>Frontend Developer</li>
-    <li>Jan - Apr 2020 (Full-time)</li>
+    <li>Jan 2019 - Apr 2020 (Full-time)</li>
     <li><small>Bali Province, Indonesia</small></li>
 </ul>
 At this company, my responsibility is to migrate thousands of non-WordPress sites or existing sites to a new host to the WordPress platform. While here I have been working very have fun, and the work culture is very good. Technologies used include: WordPress, Elementor, jQuery, CSS, etc.
