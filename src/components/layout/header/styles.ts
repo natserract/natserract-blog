@@ -1,4 +1,9 @@
-export default (theme) => ({
+import {
+  Theme,
+  createStyles
+} from "@material-ui/core/styles";
+
+export default (theme: Theme) => createStyles({
   navigationContainer: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -35,7 +40,7 @@ export default (theme) => ({
     display: "inline-block",
     fontSize: "35px",
     textDecoration: "none",
-    fontWeight: "700",
+    fontWeight: "bolder",
     fontStyle: "italic",
 
     [theme.breakpoints.only("xs")]: {
@@ -58,7 +63,7 @@ export default (theme) => ({
   subTitle: {
     display: "block",
     fontSize: "14px",
-    fontWeight: "300",
+    fontWeight: "lighter",
     opacity: "0.7",
   },
   navigation: {
