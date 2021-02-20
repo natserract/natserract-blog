@@ -44,16 +44,4 @@ export async function getStaticProps() {
     }
 }
 
-export async function getStaticPaths() {
-    const posts = getAllPosts(["slug"])
-    return {
-        paths: posts.map((post) => {
-            return {
-                params: { ...post },
-            }
-        }),
-        fallback: false,
-    }
-}
-
 export default Contributing;
