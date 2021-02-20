@@ -2,29 +2,28 @@ import React from 'react'
 import { getAllPosts } from '../../lib';
 import { blogConfig as config } from '../config/blog.config';
 import { makeStyles } from '@material-ui/core/styles';
+import Layout from '../components/layout'
+import Posts from '../components/posts'
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-interface HomePropsI {
-    allPosts?: any
-}
-
-const Home: ComponentType<HomePropsI> = ({ 
-  allPosts 
-}: HomePropsI) => {
+const Home = ({ allPosts }) => {
     const classes = useStyles();  
 
+    if (!allPosts && allPosts.length < 1) {
+      return <>Data is not ready (is undefined?)</>
+    }
+
     return (
-        <div>
-            <h2 className={classes.title}>Article</h2>
-            { JSON.stringify(allPosts) }
-        </div>
+        <Layout>
+          <Posts data={allPosts}/>
+        </Layout>
     )
 }   
 
 export async function getStaticProps() {
-    const posts = getAllPosts([
+    const posts: Array<PostI> = getAllPosts([
         "title",
         "date",
         "slug",
