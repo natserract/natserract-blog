@@ -9,13 +9,9 @@ import {
 } from "@material-ui/core/styles";
 import '../styles/globals.css'
 
-function theme() {
-  const muitheme = createTheme({
-    ...defaultTheme,
-  });
-
-  return responsiveFontSizes(muitheme);
-}
+const theme = responsiveFontSizes(createTheme({
+  ...defaultTheme,
+}));
 
 const HeadDocument = () => (
   <Head>
@@ -31,7 +27,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <HeadDocument />
-      <ThemeProvider theme={theme()}>
+      <ThemeProvider theme={theme}>
         <div suppressHydrationWarning>
           {typeof window === 'undefined' ? null : <Component {...pageProps} />}
         </div>
