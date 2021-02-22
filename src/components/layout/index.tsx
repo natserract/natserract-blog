@@ -54,6 +54,10 @@ const Layout = (props) => {
                 titleTemplate={titleTemplate}
                 description={description}
                 openGraph={{...openGraphConfig}}
+                additionalMetaTags={[{
+                    name: 'google-site-verification',
+                    content: 'Aj7wr9MHy1gfEFpCvEUBPWjP0q1nqbYFx8Zv4foEE0E'
+                }]}
             />
             <main className={classes.mainLayout} ref={ref} {...props}>
                 <Header
