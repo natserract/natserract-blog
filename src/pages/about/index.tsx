@@ -14,7 +14,11 @@ const About = ({ post }) => {
     }
 
     return (
-        <Layout>
+        <Layout 
+            title={post?.title} 
+            description={post?.excerpt}
+            titleTemplate="%s - Natserract. Thoughts and links about everything"
+        >
             <Content data={post} />
         </Layout>
     )

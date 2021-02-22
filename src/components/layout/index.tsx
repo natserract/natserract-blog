@@ -7,6 +7,7 @@ import jsonData from './layout.json'
 import hljs from 'highlight.js';
 import ReactDOM from 'react-dom'
 import getYear from 'date-fns/get_year'
+import { NextSeo } from 'next-seo'
 
 const config = {
     year: getYear(new Date()),
@@ -15,11 +16,26 @@ const config = {
 
 const useStyles = makeStyles(styles);
 const footerContent =
- `${config.year} ${config.author}. Kecuali dinyatakan lain, posting ini tersedia di bawah Lisensi saya sendiri.`
+    `${config.year} ${config.author}. Kecuali dinyatakan lain, posting ini tersedia di bawah Lisensi saya sendiri.`
 
 const Layout = (props) => {
     const classes = useStyles()
     const ref = useRef(null)
+
+    const { title, titleTemplate, description } = props
+
+    const openGraphConfig = {
+        type: 'website',
+        images: [
+            {
+                url: props.image,
+                width: 800,
+                height: 600,
+                alt: title,
+            }
+        ]
+    }
+
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -32,18 +48,26 @@ const Layout = (props) => {
     }, [])
 
     return (
-        <main className={classes.mainLayout} ref={ref} {...props}>
-            <Header
-                title="Natserract"
-                menuItems={jsonData?.menuItems}
+        <>
+            <NextSeo
+                title={title}
+                titleTemplate={titleTemplate}
+                description={description}
+                openGraph={{...openGraphConfig}}
             />
+            <main className={classes.mainLayout} ref={ref} {...props}>
+                <Header
+                    title="Natserract"
+                    menuItems={jsonData?.menuItems}
+                />
 
-            <div className={classes.contentContainer}>
-                {props.children}
-            </div>
+                <div className={classes.contentContainer}>
+                    {props.children}
+                </div>
 
-            <Footer content={footerContent} />
-        </main>
+                <Footer content={footerContent} />
+            </main>
+        </>
     )
 }
 

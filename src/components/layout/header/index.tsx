@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import NavigationMenuLists from './navigation'
 import SocialMediaLists from './social-media'
 import { socialMediaItems } from './data.json'
+
 interface PropsI {
     title: string;
     menuItems: Array<any>;
