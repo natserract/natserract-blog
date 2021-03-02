@@ -22,7 +22,7 @@ const Layout = (props) => {
     const classes = useStyles()
     const ref = useRef(null)
 
-    const { title, titleTemplate, description } = props
+    const { title, titletemplate, description } = props
 
     const openGraphConfig = {
         type: 'website',
@@ -51,7 +51,7 @@ const Layout = (props) => {
         <>
             <NextSeo
                 title={title}
-                titleTemplate={titleTemplate}
+                titleTemplate={titletemplate}
                 description={description}
                 openGraph={{...openGraphConfig}}
                 additionalMetaTags={[{

@@ -13,7 +13,7 @@ const Post = ({ post }) => {
     return (
         <Layout
             title={post?.title}
-            titleTemplate="%s - Natserract. Thoughts and links about everything"
+            titletemplate="%s - Natserract. Thoughts and links about everything"
             description={post?.excerpt}
             image={post?.coverImage}
         >

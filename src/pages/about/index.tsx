@@ -17,7 +17,7 @@ const About = ({ post }) => {
         <Layout 
             title={post?.title} 
             description={post?.excerpt}
-            titleTemplate="%s - Natserract. Thoughts and links about everything"
+            titletemplate="%s - Natserract. Thoughts and links about everything"
         >
             <Content data={post} />
         </Layout>
