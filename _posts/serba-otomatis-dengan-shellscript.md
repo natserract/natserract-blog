@@ -3,7 +3,7 @@ title: "Serba Otomatis dengan Shell Script"
 date: "2020-05-08"
 author: "Alfin Surya"
 excerpt: "Tingkatkan produktivitas kerja Anda dengan shellscript"
-coverImage: 'https://img.wonderhowto.com/img/38/47/63515296902411/0/hack-like-pro-use-netcat-swiss-army-knife-hacking-tools.1280x600.jpg'
+coverImage: 'https://i.imgur.com/9RydIkB.jpg'
 ---
 
 *Source image: [nullbyte](null-byte.wonderhowto.com)*
