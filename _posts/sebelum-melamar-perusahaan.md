@@ -43,4 +43,4 @@ Diusahakan kamu juga harus aktif ya, kalau memang ada pertanyaan tanya aja, dan 
 ## 4. Salary
 Nah, dari semua tahapan diatas, baru kita bisa mengetahui jumlah/besaran ekspetasi salary yang kita ingin. Jadi semuanya jelas, kenapa kita expect segitu, layak atau tidak?. Dan kalau dari perusahaan oke, kamunya juga oke, tinggal tentuin tanggal deh utk mulai kerja.
 
-*Okey!* sekian ya teman2, itu murni pendapat dari saya, kalaupun ada tambahan/masukan bisa contribute [disini](). Semangat! semoga bermanfaat!
+*Okey!* sekian ya teman2, itu murni pendapat dari saya, kalaupun ada tambahan/masukan bisa contribute [disini](https://github.com/natserract/natserract-next/blob/main/src/pages/contributing/_contributing.md). Semangat! semoga bermanfaat!
