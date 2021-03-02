@@ -17,6 +17,7 @@ Tapi sebelum itu, ada beberapa pertanyaan, apa bener javascript itu `dynamic typ
 Dalam kode diatas, type tidak didefinisikan, tapi Javascript sudah secara otomatis mendeteksi type ketika value dibuat. Perhatikan lagi, ketika cursor di hover
 
 ![Screen Shot 2020-12-22 at 23.26.00.png](https://i.imgur.com/GDIWkrI.png) 
+
 Dari sini kita tahu, bahwa Javascript itu [Dynamic Typing](https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_typing) 
 
 Sebelum ke maincase, bisa baca source ini dlu:
