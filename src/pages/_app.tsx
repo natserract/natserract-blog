@@ -20,6 +20,18 @@ const HeadDocument = () => (
     <link rel="stylesheet" href="/static/vendors/font-awesome.min.css" />
     <link rel="stylesheet" href="/static/vendors/highlightjs/codepen-embed.css" />
     <script src="/static/vendors/highlightjs/highlight.pack.js" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GFPP6R1VS"></script>
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2GFPP6R1VS');   
+        `
+      }}
+    />
   </Head>
 )
 
