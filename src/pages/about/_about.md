@@ -58,7 +58,7 @@ Company site: [https://fantasktic.com/](https://fantasktic.com/)
     <li><small>Bali Province, Indonesia</small></li>
 </ul>
 
-This is my **first job**. At Jeg Studio, my job is to build WordPress themes that are unique and make them look amazing that are naturally easy to use and customize, without compromising on performance. Its products are marketed on the [themeforest.net](https://themeforest.net/) site, which currently has reached **21,444 sales**.
+This is my **first job**. At Jeg Studio, my job is to build WordPress themes that are unique and make them look amazing, naturally, and easy to use without compromising performance. That's products are marketed on the [themeforest.net](https://themeforest.net/) site, which currently has reached **21,444 sales**.
 
 Company site: [https://jnews.io/](https://jnews.io/)
 </div>
