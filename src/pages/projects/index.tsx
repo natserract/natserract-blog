@@ -5,16 +5,16 @@ import Box from '@material-ui/core/Box'
 import Layout from '~/src/components/layout'
 import Content from '~/src/components/content'
 
-const pathDirectory = '../src/pages/contributing/_contributing'
-const description = "When contributing to this repository, please first discuss the change you wish to make via issue #natserract #alfinsurya"
+// Path for markdown file
+const pathDirectory = '../src/pages/projects/_projects'
 
-const Contributing = ({ post }) => {
+const About = ({ post }) => {
     if (!post) {
         return <Box>Post is undefined</Box>
     }
 
     return (
-        <Layout metaTitle="Contributing" description={description}>
+        <Layout metaTitle="Projects" description="">
             <Content data={post} />
         </Layout>
     )
@@ -45,4 +45,4 @@ export async function getStaticProps() {
     }
 }
 
-export default Contributing;
+export default About;

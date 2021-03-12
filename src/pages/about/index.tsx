@@ -15,9 +15,8 @@ const About = ({ post }) => {
 
     return (
         <Layout 
-            title={post?.title} 
+            metaTitle={post?.title} 
             description={post?.excerpt}
-            titletemplate="%s - Natserract. Thoughts and links about everything"
         >
             <Content data={post} />
         </Layout>

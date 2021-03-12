@@ -22,7 +22,7 @@ const Layout = (props) => {
     const classes = useStyles()
     const ref = useRef(null)
 
-    const { title, titletemplate, description } = props
+    const { metaTitle, metaTitleTemplate, description } = props
 
     const openGraphConfig = {
         type: 'website',
@@ -31,7 +31,7 @@ const Layout = (props) => {
                 url: props.image,
                 width: 800,
                 height: 600,
-                alt: title,
+                alt: metaTitle,
             }
         ]
     }
@@ -50,14 +50,10 @@ const Layout = (props) => {
     return (
         <>
             <NextSeo
-                title={title}
-                titleTemplate={titletemplate}
+                title={metaTitle}
+                titleTemplate={metaTitleTemplate || "%s - Natserract. Thoughts and links about everything"}
                 description={description}
                 openGraph={{...openGraphConfig}}
-                additionalMetaTags={[{
-                    name: 'google-site-verification',
-                    content: 'Aj7wr9MHy1gfEFpCvEUBPWjP0q1nqbYFx8Zv4foEE0E'
-                }]}
             />
             <main className={classes.mainLayout} ref={ref} {...props}>
                 <Header
