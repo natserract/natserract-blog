@@ -12,8 +12,7 @@ const Post = ({ post }) => {
 
     return (
         <Layout
-            title={post?.title}
-            titletemplate="%s - Natserract. Thoughts and links about everything"
+            metaTitle={post?.title}
             description={post?.excerpt}
             image={post?.coverImage}
         >
