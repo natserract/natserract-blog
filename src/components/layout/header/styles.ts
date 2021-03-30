@@ -50,7 +50,7 @@ export default (theme: Theme) => createStyles({
 
     "& h1": {
       textTransform: "uppercase",
-      fontSize: "35px",
+      fontSize: "37px",
       fontWeight: "bold",
       fontFamily: "'PT Serif', serif",
       letterSpacing: "1px",
@@ -58,7 +58,7 @@ export default (theme: Theme) => createStyles({
       [theme.breakpoints.only("xs")]: {
         display: "block",
         textAlign: "center",
-        fontSize: '32px',
+        fontSize: '33px',
       },
     },
   },
