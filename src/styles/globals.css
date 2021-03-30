@@ -2,9 +2,10 @@ html, body {
   padding: 0;
   margin: 0;
   font-weight: 300;
-  font-family: serif;
+  font-family: 'PT Serif', serif;
   color: #224326;
   line-height: 1.4em;
+  letter-spacing: -0.25px;
 }
 
 body {
@@ -27,6 +28,18 @@ a {
 
 ul {
  padding-left: 15px;
+}
+
+
+@media only screen and  (min-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.7px;
+  font-weight: bold;
 }
 
 /* If you want to using pre wrap */

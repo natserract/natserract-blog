@@ -19,6 +19,8 @@ const HeadDocument = () => (
     <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/static/vendors/font-awesome.min.css" />
     <link rel="stylesheet" href="/static/vendors/highlightjs/codepen-embed.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@200;600&display=swap" rel="stylesheet" />
     <script src="/static/vendors/highlightjs/highlight.pack.js" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GFPP6R1VS"></script>

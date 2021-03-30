@@ -5,17 +5,17 @@ import {
 
 export default (theme: Theme) => createStyles({
   navigationContainer: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      marginTop: '15px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginTop: '15px',
 
-      [theme.breakpoints.only("xs")]: {
-        flexDirection: 'column',
-        alignItems: 'center',
-      }
+    [theme.breakpoints.only("xs")]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    }
   },
   header: {
-    marginBottom: '20px'
+    marginBottom: '14px'
   },
   socialMedia: {
     display: 'flex',
@@ -33,7 +33,7 @@ export default (theme: Theme) => createStyles({
 
       "& a": {
         textDecoration: 'none',
-    }
+      }
     }
   },
   brandLink: {
@@ -52,6 +52,8 @@ export default (theme: Theme) => createStyles({
       textTransform: "uppercase",
       fontSize: "35px",
       fontWeight: "bold",
+      fontFamily: "'PT Serif', serif",
+      letterSpacing: "1px",
 
       [theme.breakpoints.only("xs")]: {
         display: "block",
@@ -62,9 +64,11 @@ export default (theme: Theme) => createStyles({
   },
   subTitle: {
     display: "block",
-    fontSize: "14px",
+    fontSize: "15px",
     fontWeight: "lighter",
     opacity: "0.7",
+    margin: '5px 0 0'
+
   },
   navigation: {
     paddingBottom: "15px",
@@ -78,18 +82,18 @@ export default (theme: Theme) => createStyles({
     margin: '0',
 
     "& li": {
-        [theme.breakpoints.up('sm')]: {
-            paddingRight: '20px',
-        },
+      [theme.breakpoints.up('sm')]: {
+        paddingRight: '20px',
+      },
 
-        [theme.breakpoints.only('xs')]: {
-            padding: '0 10px'
-        },
-        
-        "& > a": {
-            fontSize: '15px',
-            textDecoration: 'none',
-        }
+      [theme.breakpoints.only('xs')]: {
+        padding: '0 10px'
+      },
+
+      "& > a": {
+        fontSize: '15px',
+        textDecoration: 'none',
+      }
     }
   },
 });
