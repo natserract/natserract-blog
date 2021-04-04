@@ -35,12 +35,18 @@ ul {
   h1 {
     font-size: 35px;
   }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 28px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.7px;
   font-weight: bold;
 }
+
+
 
 /* If you want to using pre wrap */
 pre {
