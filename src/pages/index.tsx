@@ -17,16 +17,14 @@ const Home = ({ allPosts }) => {
   }
 
   return (
-    <Layout
-      description={seoDesc}
-    >
+    <Layout>
       <Posts data={allPosts} />
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const posts: Array<PostI> = getAllPosts([
+  const posts = getAllPosts([
     "title",
     "date",
     "slug",
@@ -34,7 +32,7 @@ export async function getStaticProps() {
     "coverImage",
     "coverImageAlt",
     "excerpt",
-    "draft"
+    "draft",
   ]);
 
   const startIndex = 0
@@ -49,4 +47,4 @@ export async function getStaticProps() {
   }
 }
 
-export default Home; 
+export default Home;

@@ -23,7 +23,7 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
     return (
         <ul className={classes.postListsContainer}>
             { data && data.map((item) => {
-                const { title, excerpt, date, slug } = item;
+                const { title, excerpt, date, slug, disqus } = item;
 
                 return (
                     <li key={generateKey()} className={classes.posts}>

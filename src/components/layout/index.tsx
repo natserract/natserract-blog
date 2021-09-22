@@ -7,7 +7,6 @@ import jsonData from './layout.json'
 import hljs from 'highlight.js';
 import ReactDOM from 'react-dom'
 import getYear from 'date-fns/get_year'
-import { NextSeo } from 'next-seo'
 
 const config = {
     year: getYear(new Date()),
@@ -22,21 +21,6 @@ const Layout = (props) => {
     const classes = useStyles()
     const ref = useRef(null)
 
-    const { metaTitle, metaTitleTemplate, description } = props
-
-    const openGraphConfig = {
-        type: 'website',
-        images: [
-            {
-                url: props.image,
-                width: 800,
-                height: 600,
-                alt: metaTitle,
-            }
-        ]
-    }
-
-
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const accessNode = ReactDOM.findDOMNode(ref.current)
@@ -49,12 +33,6 @@ const Layout = (props) => {
 
     return (
         <>
-            <NextSeo
-                title={metaTitle}
-                titleTemplate={metaTitleTemplate || "%s - Natserract. Thoughts and links about everything"}
-                description={description}
-                openGraph={{...openGraphConfig}}
-            />
             <main className={classes.mainLayout} ref={ref} {...props}>
                 <Header
                     title="Natserract"

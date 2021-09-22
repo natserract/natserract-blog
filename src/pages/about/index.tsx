@@ -14,10 +14,7 @@ const About = ({ post }) => {
     }
 
     return (
-        <Layout 
-            metaTitle={post?.title} 
-            description={post?.excerpt}
-        >
+        <Layout>
             <Content data={post} />
         </Layout>
     )

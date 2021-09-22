@@ -6,7 +6,6 @@ import Layout from '~/src/components/layout'
 import Content from '~/src/components/content'
 
 const pathDirectory = '../src/pages/contributing/_contributing'
-const description = "When contributing to this repository, please first discuss the change you wish to make via issue #natserract #alfinsurya"
 
 const Contributing = ({ post }) => {
     if (!post) {
@@ -14,7 +13,7 @@ const Contributing = ({ post }) => {
     }
 
     return (
-        <Layout metaTitle="Contributing" description={description}>
+        <Layout>
             <Content data={post} />
         </Layout>
     )

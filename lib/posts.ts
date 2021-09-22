@@ -1,6 +1,7 @@
 import fs from "fs"
 import { join } from "path"
 import matter from "gray-matter"
+import { blogConfig as config } from '~/src/config/blog.config'
 const postsDirectory = join(process.cwd(), "./_posts")
 
 export function getPostSlugs() {
@@ -11,8 +12,9 @@ interface PostFieldI {
   date: string
 }
 
-type PostsFieldT = 
+export type PostsFieldT =
   | "title"
+  | "content"
   | "date"
   | "slug"
   | "author"
@@ -21,8 +23,7 @@ type PostsFieldT =
   | "excerpt"
   | "draft";
 
-
-export function getPostBySlug(slug, fields = []) {
+export function getPostBySlug(slug, fields: PostsFieldT[] = []) {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -46,7 +47,6 @@ export function getPostBySlug(slug, fields = []) {
 
   return items
 }
-
 
 export function getAllPosts(fields: Array<PostsFieldT> = []) {
   const slugs = getPostSlugs()

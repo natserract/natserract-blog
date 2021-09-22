@@ -8,6 +8,7 @@ export default (theme) => ({
         },
     },
     content: {
+        paddingBottom: '30px',
         "& blockquote": {
             borderLeft: 'solid 4px #d2d6db',
             padding: '0 0 0 20px',

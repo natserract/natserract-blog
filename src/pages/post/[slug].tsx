@@ -11,11 +11,7 @@ const Post = ({ post }) => {
     }
 
     return (
-        <Layout
-            metaTitle={post?.title}
-            description={post?.excerpt}
-            image={post?.coverImage}
-        >
+        <Layout image={post?.coverImage}>
             <Content data={post} />
         </Layout>
     )
