@@ -257,6 +257,6 @@ Biasanya `lazy` dan `Suspense` untuk menangani kasus pemuatan data/fetching. Unt
 ### Kesimpulan
 Pada intinya optimisasi diperlukan **jika ada suatu masalah** saja, cara yang termudah adalah mulai dari membuat kode tanpa optimisasi dulu. Tujuan dari pengoptimalan sendiri adalah kecepatan, atau lebih baik dari sebelumnya jika memang caranya tepat itu akan berhasil.
 
-Di case React sendiri juga tidak boleh *overuse* dalam menggunakan cara2 diatas, harus tentukan saat kapan dan dimana harus dipasang. Karena "semua yg berlebihan itu ga baik", hmm. 
+Di case React sendiri juga tidak boleh *overuse* dalam menggunakan cara2 diatas, harus tentukan saat kapan dan dimana harus dipasang. Karena "semua yg berlebihan itu ga baik", hmm. Untuk implementasi code tulisan ini bisa dilihat disini [react-optimization](https://github.com/natserract/react-optimization).
 
 Oke mungkin itu aja tulisan kali ini, kalau memang ada saran, kritik, diskusi bisa komen dibawah ya! Thanks!
