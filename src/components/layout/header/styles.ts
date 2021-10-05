@@ -7,7 +7,7 @@ export default (theme: Theme) => createStyles({
   navigationContainer: {
     display: 'flex',
     justifyContent: 'space-between',
-    marginTop: '15px',
+    marginTop: '20px',
 
     [theme.breakpoints.only("xs")]: {
       flexDirection: 'column',
@@ -50,7 +50,7 @@ export default (theme: Theme) => createStyles({
 
     "& h1": {
       textTransform: "uppercase",
-      fontSize: "37px",
+      fontSize: "42px",
       fontWeight: "bold",
       fontFamily: "'PT Serif', serif",
       letterSpacing: "1px",
@@ -58,13 +58,13 @@ export default (theme: Theme) => createStyles({
       [theme.breakpoints.only("xs")]: {
         display: "block",
         textAlign: "center",
-        fontSize: '33px',
+        fontSize: '40px',
       },
     },
   },
   subTitle: {
     display: "block",
-    fontSize: "15px",
+    fontSize: "17px",
     fontWeight: "lighter",
     opacity: "0.7",
     margin: '5px 0 0'
@@ -91,7 +91,7 @@ export default (theme: Theme) => createStyles({
       },
 
       "& > a": {
-        fontSize: '15px',
+        fontSize: '16px',
         textDecoration: 'none',
       }
     }

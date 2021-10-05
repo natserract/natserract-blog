@@ -17,7 +17,7 @@ export default (theme) => ({
             padding: '.2em .4em',
             margin: '0',
             fontSize: '85%',
-            backgroundColor: 'rgba(0, 0, 0, 0.1)',
+            backgroundColor: 'rgba(220, 241, 213, 0.78)',
             borderRadius: '3px',
         },
         "& .img-float": {

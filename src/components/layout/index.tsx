@@ -35,7 +35,7 @@ const Layout = (props) => {
         <>
             <main className={classes.mainLayout} ref={ref} {...props}>
                 <Header
-                    title="Natserract"
+                    title="Natserract!"
                     menuItems={jsonData?.menuItems}
                 />
 

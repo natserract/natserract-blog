@@ -227,7 +227,7 @@ Seiring berkembangnya waktu ukuran hasil build file/bundle bisa menjadi lebih be
 
 ![initial load](https://miro.medium.com/max/2000/1*Yl7S7iGRMn_ChLmttDVbQw.png)
 
-#### React.lazy() ❤️ Suspense
+### React.lazy() ❤️ Suspense
 [Lazy loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) adalah teknik pengoptimalan kinerja untuk aplikasi web dan seluler. Kata kuncinya adalah `malas`, artinya muncul saat diperlukan saja. `React.lazy()` adalah fungsi bawaan React yg  memungkinkan Anda membuat impor secara dinamis sebagai komponen biasa. 
 
 ```jsx 
