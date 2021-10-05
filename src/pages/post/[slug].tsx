@@ -11,7 +11,7 @@ const Post = ({ post }) => {
     }
 
     return (
-        <Layout image={post?.coverImage}>
+        <Layout>
             <Content data={post} />
         </Layout>
     )
