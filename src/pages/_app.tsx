@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { AppProps } from 'next/app';
 import defaultTheme from "../config/mui-theme.config";
 import { ThemeProvider } from '@material-ui/core/styles';
@@ -8,6 +7,7 @@ import {
   responsiveFontSizes,
 } from "@material-ui/core/styles";
 import '../styles/globals.css'
+import React from 'react';
 
 const theme = responsiveFontSizes(createTheme({
   ...defaultTheme,
@@ -22,7 +22,6 @@ const HeadDocument = () => (
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@200;600&display=swap" rel="stylesheet" />
     <script src="/static/vendors/highlightjs/highlight.pack.js" />
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GFPP6R1VS"></script>
     <script
       dangerouslySetInnerHTML={{
@@ -39,14 +38,14 @@ const HeadDocument = () => (
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <React.Fragment>
       <HeadDocument />
       <ThemeProvider theme={theme}>
-        <div suppressHydrationWarning>
+        <div suppressHydrationWarning style={{ position: 'relative' }}>
           {typeof window === 'undefined' ? null : <Component {...pageProps} />}
         </div>
       </ThemeProvider>
-    </>
+    </React.Fragment>
   )
 }
 

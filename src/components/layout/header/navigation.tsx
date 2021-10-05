@@ -8,7 +8,7 @@ import { useLoadingIndicator } from '~/src/hooks'
 
 const useStyles = makeStyles(styles);
 
-const NavigationMenuLists = ({ items }) => {
+const NavigationMenu = ({ items }) => {
     const classes = useStyles()
 
     const [loadingState, setLoadingState] = useState(false)
@@ -27,4 +27,4 @@ const NavigationMenuLists = ({ items }) => {
     )
 }
 
-export default NavigationMenuLists
+export default NavigationMenu

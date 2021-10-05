@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles'
 import styles from './styles'
 import Typography from '@material-ui/core/Typography';
-import NavigationMenuLists from './navigation'
-import SocialMediaLists from './social-media'
+import NavigationMenu from './navigation'
+import SocialMedia from './social-media'
 import { socialMediaItems } from './data.json'
 
 interface PropsI {
@@ -28,8 +28,8 @@ const Header: ComponentType<PropsI> = ({ title, menuItems }: PropsI) => {
                 </a>
 
                 <div className={classes.navigationContainer}>
-                    <NavigationMenuLists items={menuItems} />
-                    <SocialMediaLists items={socialMediaItems} />
+                    <NavigationMenu items={menuItems} />
+                    <SocialMedia items={socialMediaItems} />
                 </div>
             </nav>
         </header>

@@ -3,7 +3,7 @@ import { generateKey } from '../../../utils'
 import styles from './styles'
 
 const useStyles = makeStyles(styles);
-const SocialMediaLists = ({ items }) => {
+const SocialMedia = ({ items }) => {
     const classes = useStyles()
 
     return (
@@ -19,4 +19,4 @@ const SocialMediaLists = ({ items }) => {
     )
 }
 
-export default SocialMediaLists
+export default SocialMedia
