@@ -1,12 +1,16 @@
 {
     "menuItems": [
         {
-            "name": "Home",
+            "name": "Main",
             "path": "/"
         },
         {
             "name": "About",
             "path": "/about"
+        },
+        {
+            "name": "Talks",
+            "path": "/talks"
         },
         {
             "name": "Contributing",

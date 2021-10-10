@@ -1,5 +1,4 @@
 ---
-title: 'Contributing'
 slug: "about"
 date: "2020-07-09"
 author: "Alfin Surya"

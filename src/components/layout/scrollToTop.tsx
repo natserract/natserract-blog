@@ -1,6 +1,5 @@
 import { makeStyles, useTheme } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
 import { useCallback, useEffect, useState } from 'react'
 
 const useStyles = makeStyles(theme => ({
@@ -22,14 +21,13 @@ const useStyles = makeStyles(theme => ({
     },
   },
   scrollToTopBtn: {
-    background: '#222',
-    color: '#fff',
-    minWidth: 40,
-    height: 35,
-
 
     '&:hover': {
-      background: '#222 !important',
+      background: 'transparent !important',
+
+      "& span": { 
+        textDecoration: 'underline',
+      }
     }
   }
 }))
@@ -70,9 +68,7 @@ const ScrollToTop = () => {
   return (
     showScroll && (
       <div className={classes.scrollToTopContainer}>
-        <Button className={classes.scrollToTopBtn} onClick={onScrollToTop}>
-          <ArrowUpwardIcon fontSize="small" />
-        </Button>
+        <Button className={classes.scrollToTopBtn} onClick={onScrollToTop} disableRipple variant="text"> To The Top &#x2934;</Button>
       </div>
     )
   )

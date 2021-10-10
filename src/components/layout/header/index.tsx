@@ -17,16 +17,20 @@ const Header: ComponentType<PropsI> = ({ title, menuItems }: PropsI) => {
 
     return (
         <header className={classes.header}>
-            <nav className={classes.navigation}>
+            <div className={classes.brandSection}>
                 <a href="/" className={classes.brandLink}>
                     <Typography
                         variant="h1"
                         color='primary'
                         children={title}
                     />
-                    <span className={classes.subTitle}>Jarrib walaahizh takun ‘arifan</span>
+                    <Typography variant="h2" className={classes.subTitle}>
+                        Software Engineer
+                    </Typography>
                 </a>
+            </div>
 
+            <nav className={classes.navigation}>
                 <div className={classes.navigationContainer}>
                     <NavigationMenu items={menuItems} />
                     <SocialMedia items={socialMediaItems} />

@@ -1,17 +1,15 @@
 html, body {
   padding: 0;
   margin: 0;
-  font-weight: 300;
-  font-family: 'PT Serif', serif;
-  color: #224326;
-  line-height: 1.4em;
-  letter-spacing: -0.25px;
 }
 
 body {
-  background-color: #dcf1d5;
-  color: #224326;
-  font-size: 16px;
+  background-color: #fff;
+  font-size: 14pt;
+  text-rendering: optimizeLegibility;
+  font-family: sans-serif;
+  color: #1d1d27;
+  line-height: 1.6em;
 }
 
 body.loading-indicator {
@@ -19,7 +17,13 @@ body.loading-indicator {
 }
 
 a {
-  color: #006600;
+  color: rgb(2, 117, 216);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(73, 100, 149, 0.97);
+  text-decoration: underline;
 }
 
 * {
@@ -70,8 +74,8 @@ pre {
 }
 
 ::selection {
-  background: #dcf1d5;
-  color: #224326
+  background: #1d1d27;
+  color: #fff;
 }
 
 strong {

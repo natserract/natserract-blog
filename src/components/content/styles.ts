@@ -1,23 +1,25 @@
 export default (theme) => ({
     title: {
         lineHeight: '1.2',
-        marginBottom: '20px',
+        fontFamily: 'sans-serif',
+        fontSize: '38px',
+        fontWeight: 700,
+        margin: '0 0 5px',
 
         [theme.breakpoints.only("xs")]: {
-
         },
     },
     content: {
         "& blockquote": {
             borderLeft: 'solid 4px #d2d6db',
             padding: '0 0 0 20px',
-            margin: '0 0 15px',
+            margin: '30px 0',
         },
         "& code:not(.hljs)": {
             padding: '.2em .4em',
             margin: '0',
             fontSize: '85%',
-            backgroundColor: 'rgba(220, 241, 213, 0.78)',
+            backgroundColor: 'rgb(240, 239, 239)',
             borderRadius: '3px',
         },
         "& .img-float": {
@@ -54,5 +56,16 @@ export default (theme) => ({
         "& .container-sm": {
             maxWidth: '500px',
         }
-    }
+    },
+    postCoverImg: {
+        margin: '17px 0 30px',
+    },
+    titleContainer: {
+        margin: '20px 0 25px',
+    },
+    published: {
+        fontStyle: 'italic',
+        fontSize: 16,
+    },
+   
 })

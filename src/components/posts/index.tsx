@@ -27,12 +27,12 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
 
                 return (
                     <li key={generateKey()} className={classes.posts}>
-                        <div className={classes.postsHeadContainer}>
+                        <h3 className={classes.postsHeadContainer}>
+                            <time className={classes.postDate}>{parseDate(date)}</time>
                             <Link href={`post/${slug}`}>
                                 <a onClick={loadingIndicator}>{title}</a>
                             </Link>
-                            <span className={classes.postDate}>{parseDate(date)}</span>
-                        </div>
+                        </h3>
                         <span>{excerpt}</span>
                     </li>
                 )
