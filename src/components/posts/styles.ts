@@ -1,10 +1,15 @@
-export default (theme) => ({
+import {
+  Theme,
+  createStyles
+} from "@material-ui/core/styles";
+
+export default (theme: Theme) => createStyles({
   posts: {
     display: "block",
-    marginBottom: "15px",
+    marginBottom: "20px",
 
     [theme.breakpoints.only("xs")]: {
-      marginBottom: "20px",
+      marginBottom: "25px",
     },
 
     "& .cursor-loading": {
@@ -12,23 +17,31 @@ export default (theme) => ({
     },
   },
   postsHeadContainer: {
-    display: "flex",
-    alignItems: "flex-start",
+    margin: '0 0 10px',
+    borderBottom: 'dashed 1px #595959',
 
-    [theme.breakpoints.only("xs")]: {
-      flexDirection: "column-reverse",
+    "& time": {
+      float: 'right',
+      marginTop: 6,
+
+      [theme.breakpoints.only("xs")]: {
+        float: 'none',
+        display: 'block',
+        margin: '0 0 6px',
+      }
     },
 
     "& a": {
-      display: "block",
+      display: "inline",
       marginBottom: "3px",
-      fontSize: "16px",
+      fontSize: "19px",
     },
   },
   postDate: {
-    fontSize: "13px",
-    opacity: ".5",
+    fontSize: "16px",
     marginLeft: "8px",
+    fontWeight: 400,
+    fontStyle: 'italic',
 
     [theme.breakpoints.only("xs")]: {
       margin: "0",

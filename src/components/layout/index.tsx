@@ -16,7 +16,7 @@ const config = {
 
 const useStyles = makeStyles(styles);
 const footerContent =
-    `${config.year} ${config.author}. Kecuali dinyatakan lain, posting ini tersedia di bawah Lisensi saya sendiri.`
+    `© ${config.year} ${config.author}. Posting ini tersedia di bawah Lisensi saya sendiri.`
 
 const Layout: React.FC = (props) => {
     const classes = useStyles()
@@ -35,7 +35,7 @@ const Layout: React.FC = (props) => {
     return (
         <React.Fragment>
             <main className={classes.mainLayout} ref={ref} {...props}>
-                <Header title="Natserract!" menuItems={jsonData?.menuItems} />
+                <Header title="Natserract" menuItems={jsonData?.menuItems} />
 
                 <div className={classes.contentContainer}>
                     {props.children}

@@ -9,8 +9,8 @@ export default (theme: Theme) => createStyles({
     maxWidth: "800px",
     overflow: "hidden",
     margin: "0 auto",
-    padding: "25px 35px",
-    minHeight: "100vh",
+    padding: "20px 35px 30px",
+    // minHeight: "100vh",
     position: "relative",
 
     [theme.breakpoints.down("sm")]: {
@@ -23,7 +23,7 @@ export default (theme: Theme) => createStyles({
   },
 
   contentContainer: {
-    paddingBottom: "5em",
+    padding: '.5em 0 2em',
 
     "& img": {
       display: "block",

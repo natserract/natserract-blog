@@ -7,15 +7,14 @@ export default (theme: Theme) => createStyles({
   navigationContainer: {
     display: 'flex',
     justifyContent: 'space-between',
-    marginTop: '20px',
+    marginTop: '5px',
 
     [theme.breakpoints.only("xs")]: {
       flexDirection: 'column',
-      alignItems: 'center',
+      alignItems: 'flex-start',
     }
   },
   header: {
-    marginBottom: '14px'
   },
   socialMedia: {
     display: 'flex',
@@ -39,41 +38,33 @@ export default (theme: Theme) => createStyles({
   brandLink: {
     display: "inline-block",
     fontSize: "35px",
-    textDecoration: "none",
-    fontWeight: "bolder",
-    fontStyle: "italic",
+    textDecoration: "none !important",
 
     [theme.breakpoints.only("xs")]: {
       display: "block",
-      textAlign: "center",
     },
 
     "& h1": {
-      textTransform: "uppercase",
-      fontSize: "42px",
-      fontWeight: "bold",
-      fontFamily: "'PT Serif', serif",
-      letterSpacing: "1px",
+      fontSize: "57px",
+      fontFamily: "sans-serif",
+      fontWeight: 600,
+      color: '#1d1d27',
 
       [theme.breakpoints.only("xs")]: {
         display: "block",
-        textAlign: "center",
-        fontSize: '40px',
       },
     },
   },
   subTitle: {
     display: "block",
-    fontSize: "17px",
+    fontSize: "33px",
     fontWeight: "lighter",
-    opacity: "0.7",
-    margin: '5px 0 0'
+    color: '#1d1d27',
+    fontStyle: 'italic',
+    marginTop: '-5px',
 
   },
-  navigation: {
-    paddingBottom: "15px",
-    borderBottom: "1px solid #dcf1d5",
-  },
+  navigation: {},
   menuLists: {
     display: "flex",
     justifyContent: "space-between",
@@ -87,13 +78,19 @@ export default (theme: Theme) => createStyles({
       },
 
       [theme.breakpoints.only('xs')]: {
-        padding: '0 10px'
+        padding: '0 10px',
+        "&:nth-of-type(1)": {
+          paddingLeft: 0
+        },
       },
 
       "& > a": {
-        fontSize: '16px',
-        textDecoration: 'none',
+        fontSize: '18px',
       }
     }
   },
+  brandSection: {
+    borderBottom: 'solid 1px #1d1d27',
+    paddingBottom: '10px',
+  }
 });
