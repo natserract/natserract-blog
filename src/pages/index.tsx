@@ -21,7 +21,7 @@ const Home = ({ allPosts }) => {
   return (
     <Layout>
       <div className={classes.introSection}>
-        <p>I am a front-end engineer. Currently open to collaboration, discussion and remote work.</p>
+        <p>Hey, I'm <b>Alfin Surya</b> aka <i>Natserract</i>. I'm a software engineer and writer. I love build things that make people's lives easier. Lately, I've been interested in tooling, functional programming, and islamic books. Currently open to collaboration, discussion and remote work.</p>
         <p>This blog is a collection of links about programming that I find interesting. By sharing it with you, I hope to attract other people with similar tastes who will share the new link with me, at the same time hope it will be of use.</p>
       </div>
       <div className={classes.blogSection}>
