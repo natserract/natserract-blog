@@ -9,7 +9,7 @@ export default (theme: Theme) => createStyles({
     marginBottom: "20px",
 
     [theme.breakpoints.only("xs")]: {
-      marginBottom: "25px",
+      marginBottom: "33px",
     },
 
     "& .cursor-loading": {
