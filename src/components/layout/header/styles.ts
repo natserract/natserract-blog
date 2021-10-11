@@ -7,7 +7,7 @@ export default (theme: Theme) => createStyles({
   navigationContainer: {
     display: 'flex',
     justifyContent: 'space-between',
-    marginTop: '5px',
+    marginTop: '7px',
 
     [theme.breakpoints.only("xs")]: {
       flexDirection: 'column',
@@ -90,7 +90,7 @@ export default (theme: Theme) => createStyles({
     }
   },
   brandSection: {
-    borderBottom: 'solid 1px #1d1d27',
-    paddingBottom: '10px',
+    borderBottom: 'solid 2px #1d1d27',
+    paddingBottom: '7px',
   }
 });
