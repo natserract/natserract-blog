@@ -4,6 +4,7 @@ date: "2020-04-22"
 author: "Alfin Surya"
 excerpt: "Mencoba paradigma pemrogaman fungsional di Rust"
 coverImage: 'https://res.cloudinary.com/practicaldev/image/fetch/s--lNRD-vey--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/2y19pxhcq4ltvzq569mv.png'
+favorite: 'yes'
 ---
 
 Sebulan lalu ketika pertama kali mendevelop sebuah non komersial project menggunakan [ReasonML](https://reasonml.github.io/), saya mendapat sebuah pengalaman baru, yaitu *functional programming*. Bahasa ini merupakan alternative syntax dari [OCaml](https://ocaml.org/). OCaml sendiri merupakan purely functional language, fitur-fitur yang ditawarkan menarik. Contohnya: type inference, strongly type system, algebraic datatypes, dan masih banyak lagi. Menarik bukan?

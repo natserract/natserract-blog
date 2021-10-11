@@ -4,6 +4,7 @@ date: "2019-11-30"
 author: "Alfin Surya"
 excerpt: "Ngoding Vue menggunakan pattern React"
 coverImage: 'https://res.cloudinary.com/practicaldev/image/fetch/s--0sdgyFHo--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/fmmsca2u3ssel70leqyt.png'
+favorite: 'yes'
 ---
 
 Ketika pertama kali kamu ingin belajar suatu teknologi khususnya frontend, biasanya kamu bingung mau mulai dari mana, salah satu alasannya karena kamu dihadapkan dengan banyak pilihan stack, contohnya: Vue, Angular, React, dll. Tentu saja ini membingungkan, maka dari itu supaya tahu bagaimana stack2 itu bekerja, caranya adalah harus langsung mencobanya. Yang perlu diingat semua teknologi punya pros dan consnya masing2.

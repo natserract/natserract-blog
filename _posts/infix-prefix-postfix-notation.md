@@ -4,6 +4,7 @@ date: "2021-04-03"
 author: "Alfin Surya"
 excerpt: "Notasi penulisan ekspresi aritmatika"
 coverImage: "https://i.ytimg.com/vi/V88BS4UN8qg/maxresdefault.jpg"
+favorite: 'yes'
 ---
 
 Ketika belajar bahasa pemrogaman, pastinya ada beberapa hal wajib yang tidak boleh dilewatkan, seperti memahami syntax, tipe data, operator, dll. Nah ditulisan kali ini saya akan menyinggung tentang operator.

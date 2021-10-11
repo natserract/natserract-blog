@@ -3,6 +3,7 @@ title: "React Optimization Techniques"
 date: "2021-10-01"
 author: "Alfin Surya"
 excerpt: "Ways to Optimize Your React App's Performance"
+favorite: 'yes'
 ---
 
 Didalam pengembangan sebuah software **performance** merupakan salah satu faktor penting yang harus diperhatikan, karena ini menyangkut tentang kinerja dari software itu sendiri yang nanti langsung berdampak pada end-user, dan begitu juga bisnis. 

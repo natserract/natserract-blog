@@ -21,7 +21,8 @@ export type PostsFieldT =
   | "coverImage"
   | "coverImageAlt"
   | "excerpt"
-  | "draft";
+  | "draft"
+  | "favorite";
 
 export function getPostBySlug(slug, fields: PostsFieldT[] = []) {
   const excerptSlug = slug.includes(['.DS_Store'])

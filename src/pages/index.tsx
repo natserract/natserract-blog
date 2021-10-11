@@ -27,6 +27,7 @@ const Home = ({ allPosts }) => {
       <div className={classes.blogSection}>
         <Typography variant="h3" component="h2">
           Blog Posts
+          <span className={classes.toc}>(favorites have sparkles)</span>
         </Typography>
         <Posts data={allPosts} />
       </div>
@@ -44,6 +45,7 @@ export async function getStaticProps() {
     "coverImageAlt",
     "excerpt",
     "draft",
+    "favorite",
   ]);
 
   const startIndex = 0

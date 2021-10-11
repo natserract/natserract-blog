@@ -35,6 +35,7 @@ export default (theme: Theme) => createStyles({
       display: "inline",
       marginBottom: "3px",
       fontSize: "19px",
+      position: 'relative',
     },
   },
   postDate: {
@@ -50,4 +51,7 @@ export default (theme: Theme) => createStyles({
   postListsContainer: {
     paddingLeft: "0",
   },
+  favoriteIcon: {
+    paddingLeft: 5,
+  }
 });

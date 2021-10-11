@@ -27,10 +27,17 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
 
                 return (
                     <li key={generateKey()} className={classes.posts}>
-                        <h3 className={classes.postsHeadContainer}>
+                        <h3 className={`${classes.postsHeadContainer}`}>
                             <time className={classes.postDate}>{parseDate(date)}</time>
                             <Link href={`post/${slug}`}>
-                                <a onClick={loadingIndicator}>{title}</a>
+                                <a onClick={loadingIndicator}>
+                                    {title}
+                                    
+                                    {item?.favorite && 
+                                    item?.favorite === 'yes' && (
+                                        <span className={classes.favoriteIcon}>✨</span>
+                                    )}
+                                </a>
                             </Link>
                         </h3>
                         <span>{excerpt}</span>
