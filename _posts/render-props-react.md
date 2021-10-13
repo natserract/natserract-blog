@@ -1,12 +1,12 @@
 ---
-title: "React Pattern: Render Props"
+title: "Remote Data in React with Render Props"
 date: "2021-03-09"
 author: "Alfin Surya"
-excerpt: "Teknik dimana kita bisa berbagi kode antar komponen yang di passing melalui props. Props ini nantinya akan mengembalikan sebuah nilai berupa fungsi."
+excerpt: "Teknik dimana kita bisa berbagi data antar komponen yang di passing melalui props. Props ini nantinya akan mengembalikan sebuah nilai berupa fungsi."
 # coverImage: "https://cdn-images-1.medium.com/max/1000/1*g_cxbFU5GHUzn43-FCnd_w.png"
 ---
 
-Bagi kamu para react dev, ada yang sudah dengar ini? Iyap, **render props** adalah sebuah teknik di react dimana kita bisa **berbagi kode antar komponen** yang di passing melalui **props**. 
+Bagi kamu para react dev, ada yang sudah dengar ini? Iyap, **render props** adalah sebuah teknik di react dimana kita bisa **berbagi data antar komponen** yang di passing melalui **props**. 
 
 Props ini nantinya akan mengembalikan sebuah nilai berupa fungsi. Render props sendiri terdapat 2 jenis cara, ada yang melalui `props` ada pula melalui `children`.
 
@@ -46,8 +46,6 @@ const Home = () => {
 
 Pada kode diatas, terlihat komponen home tidak memproses data lagi untuk mendapatkan data user, tinggal import component `<CurrentPersonalAccount />`, selesai!. 
 
-Namun render props sendiri dibeberapa case bisa saja terjadi **callback hell**, maksudnya adalah render props di dalam render props, hingga berulang2. Jadi *gunakan dengan tepat, dan sesuai kebutuhan!*, tetapi jika casenya memang seperti itu? bisa baca artikel ini [solve react render props callback hell](https://dmitripavlutin.com/solve-react-render-props-callback-hell/)
+Namun render props sendiri dibeberapa case bisa saja terjadi **callback hell**, maksudnya adalah render props di dalam render props, hingga berulang2. 
 
- Mungkin Secara tidak sadar, kalian sudah pernah menggunakan render props di beberapa library, contohnya seperti [react router dom](https://reactrouter.com/web/api/Route/render-func), dan library2 lain. 
- 
- Sekian, semoga bermanfaat!
+Jadi *gunakan dengan tepat, dan sesuai kebutuhan!*, tetapi jika casenya memang seperti itu? bisa baca artikel ini [solve react render props callback hell](https://dmitripavlutin.com/solve-react-render-props-callback-hell/). Mungkin Secara tidak sadar, kalian sudah pernah menggunakan render props di beberapa library, contohnya seperti [react router dom](https://reactrouter.com/web/api/Route/render-func), dan library2 lain. Sekian, semoga bermanfaat!
