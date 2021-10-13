@@ -2,7 +2,7 @@
 title: "Angular DOM Manipulation"
 date: "2020-07-09"
 author: "Alfin Surya"
-excerpt: "Manipulasi DOM menggunakan renderer, no jQuery!"
+excerpt: "Bagi pengguna Angular, mungkin sudah pernah menggunakan ataupun pernah dengar apa itu Renderer. Fitur ini sudah muncul sejak Angular versi 4. Bagi kamu pengguna Angular 8/9, saatnya bermigrasi ke Renderer2. Alasannya"
 ---
 
 Bagi pengguna Angular, mungkin sudah pernah menggunakan ataupun pernah dengar apa itu `Renderer`. Fitur ini sudah muncul sejak Angular versi 4. Bagi kamu pengguna Angular 8/9, saatnya bermigrasi ke `Renderer2`. Alasannya bisa kalian baca disini: [Renderer to Renderer2 migration](https://angular.io/guide/migration-renderer)

@@ -36,7 +36,10 @@ export default (theme) => ({
             opacity: '0.5',
         },
         "& ol": {
-            padding: '0 0 0 20px',
+            padding: '0 0 0 30px',
+        },
+        "& ul": {
+            padding: '0 0 0 30px'
         },
         "& .section-group-about": {
             margin: "0 0 35px",

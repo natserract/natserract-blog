@@ -2,7 +2,7 @@
 title: "Mutable/Immutable pada Javascript"
 date: "2020-04-27"
 author: "Alfin Surya"
-excerpt: "Memahami mutable / immutable di javascript"
+excerpt: "Mutability dan immutability merupakan suatu konsep penting dalam dunia pemrograman. Pada dasarnya ini adalah sebuah objek dimana state/nilainya"
 ---
 
 Hai semua! Welcome ya, semoga bisa banya memberikan kontribusi  di blog ini. Okey, di thread ini kita akan membahas apa si itu mutable/immutable pada JavaScript/TypeScript. 

@@ -2,7 +2,7 @@
 title: "Melamar Perusahaan, Seperti Melamar Doi"
 date: "2021-03-02"
 author: "Alfin Surya"
-excerpt: "Rules dan tips sebelum melamar perusahaan"
+excerpt: "Di era modern ini, fakta yg kita tahu bahwa teknologi semakin hari semakin berkembang dan banyak bermunculan. Sebagai developer tentunya kita akan dituntut untuk terus belajar atau minimal mengetahui teknologi tersebut, kalau tidak pasti"
 coverImage: 'https://i.pinimg.com/736x/d6/10/e4/d610e4adf23766c1b256616dffd9e16e--abstract-art-paintings-over-the.jpg'
 favorite: 'yes'
 ---

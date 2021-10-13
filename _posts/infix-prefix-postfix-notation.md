@@ -2,7 +2,7 @@
 title: "Infix, prefix, postfix. Is it Matter?"
 date: "2021-04-03"
 author: "Alfin Surya"
-excerpt: "Notasi penulisan ekspresi aritmatika"
+excerpt: 'Faktanya bahwa kita tidak akan bisa lepas dari matematika di kehidupan, khususnya di bahasa pemrogaman yang matematis yaitu functional programming. Seperti yang dikatakan seorang blogger matematikawan "After my involving myself in the subject, one thing"'
 coverImage: "https://i.ytimg.com/vi/V88BS4UN8qg/maxresdefault.jpg"
 favorite: 'yes'
 ---

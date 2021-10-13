@@ -2,7 +2,7 @@
 title: "Implementasi React pattern di Vuejs"
 date: "2019-11-30"
 author: "Alfin Surya"
-excerpt: "Ngoding Vue menggunakan pattern React"
+excerpt: "Yang akan di bahas disini adalah bagaimana para React developer bisa menggunakan React pattern di Vue dengan kode yang mirip/sama (97%)"
 coverImage: 'https://res.cloudinary.com/practicaldev/image/fetch/s--0sdgyFHo--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/fmmsca2u3ssel70leqyt.png'
 favorite: 'yes'
 ---

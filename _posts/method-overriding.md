@@ -2,11 +2,11 @@
 title: "Method Overidding, Monkey Patching"
 date: "2021-09-17"
 author: "Alfin Surya"
-excerpt: "Mengulik bagian unik pada JavaScript"
+excerpt: "Monkey patching atau tambalan monyet ini merupakan istilah yang merujuk pada perubahan kode, dimana pada intinya ini adalah sebuah cara/teknik untuk memperluas"
 coverImage: "https://i.kym-cdn.com/entries/icons/facebook/000/000/521/13809242.b4f8cba9.1200x1200o.60dc4f38b621.jpg"
 ---
 
-Huh, setelah sekian lama ga nulis lagi, kali ini saya mencoba untuk sharing kembali, karena saya pikir aga eman kalau ga dishare.    Oke langsung ke topik saja, akhir-akhir ini saya lebih banyak berkutat pada hal-hal yang bersangkutan dengan diagram. Library yang saya gunakan adalah [MxGraph](https://jgraph.github.io/mxgraph/), walaupun proses pengembangannya berhenti tapi lib ini cukup mumpuni dikelasnya dan masih layak untuk digunakan (dengan alasan yang cukup hati2). 
+Huh, setelah sekian lama ga nulis lagi, kali ini saya mencoba untuk sharing kembali, karena saya pikir aga eman kalau ga dishare. Oke langsung ke topik saja, akhir-akhir ini saya lebih banyak berkutat pada hal-hal yang bersangkutan dengan diagram. Library yang saya gunakan adalah [MxGraph](https://jgraph.github.io/mxgraph/), walaupun proses pengembangannya berhenti tapi lib ini cukup mumpuni dikelasnya dan masih layak untuk digunakan (dengan alasan yang cukup hati2). 
 
 Library ini saya pikir cukup lengkap dari segi API dan dokumentasinya, selain itu lib ini juga support di beberapa bahasa pemrogaman. Selama proses development, terkadang di beberapa case saya, ada beberapa API yang membutuhkan konfigurasi tambahan ataupun modifikasi, maka dari itu saya melakukan pendekatan yakni salah satunya dengan teknik [monkey patching](https://en.wikipedia.org/wiki/Monkey_patch).
 

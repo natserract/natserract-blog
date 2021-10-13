@@ -2,7 +2,7 @@
 title: "Code Archive: Stripe Pagination"
 date: "2021-03-03"
 author: "Alfin Surya"
-excerpt: "Membuat pagination secara manual di Stripe"
+excerpt: "Catatan/arsip kode membuat pagination secara manual di stripe"
 ---
 
 Hanya catatan/arsip kode yang saya buat

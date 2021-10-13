@@ -2,7 +2,7 @@
 title: "Run Your Function Only Once"
 date: "2021-09-17"
 author: "Alfin Surya"
-excerpt: "Sebuah case yang tidak kamu duga"
+excerpt: "Terkadang di beberapa kondisi mungkin kita perlu menjalankan suatu fungsi hanya sekali meskipun pemanggilannya berkali-kali. Ini bisa terjadi"
 ---
 
 Terkadang di beberapa kondisi mungkin kita perlu menjalankan suatu fungsi hanya sekali meskipun pemanggilannya berkali-kali. Ini bisa terjadi, tergantung kondisi dan case masing-masing. Contohnya dibeberapa case seperti:

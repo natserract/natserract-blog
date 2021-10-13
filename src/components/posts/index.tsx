@@ -23,8 +23,8 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
     return (
         <ul className={classes.postListsContainer}>
             { data && data.map((item) => {
-                const { title, excerpt, date, slug, disqus } = item;
-
+                const { title, excerpt, content, date, slug, disqus } = item;
+                
                 return (
                     <li key={generateKey()} className={classes.posts}>
                         <h3 className={`${classes.postsHeadContainer}`}>
@@ -40,7 +40,7 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
                                 </a>
                             </Link>
                         </h3>
-                        <span>{excerpt}</span>
+                        <span>{excerpt}...</span>
                     </li>
                 )
             })}

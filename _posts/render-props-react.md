@@ -2,7 +2,7 @@
 title: "React Pattern: Render Props"
 date: "2021-03-09"
 author: "Alfin Surya"
-excerpt: "Teknik berbagi kode untuk komponen"
+excerpt: "Teknik dimana kita bisa berbagi kode antar komponen yang di passing melalui props. Props ini nantinya akan mengembalikan sebuah nilai berupa fungsi."
 # coverImage: "https://cdn-images-1.medium.com/max/1000/1*g_cxbFU5GHUzn43-FCnd_w.png"
 ---
 

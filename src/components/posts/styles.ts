@@ -34,7 +34,7 @@ export default (theme: Theme) => createStyles({
     "& a": {
       display: "inline",
       marginBottom: "3px",
-      fontSize: "19px",
+      fontSize: "20px",
       position: 'relative',
     },
   },

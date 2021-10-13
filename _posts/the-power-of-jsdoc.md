@@ -2,7 +2,7 @@
 title: "The Power of JSDoc"
 date: "2020-12-23"
 author: "Alfin Surya"
-excerpt: "Buat utility JavaScript kamu lebih scal/read(able)"
+excerpt: "JSDoc itu adalah dokumentasi dari source code yang kita buat, bentuknya simple hanya berupa komen tpi penggunaannya sangat berguna nantinya. Contohnya ada pada"
 ---
 
 Bagi para developer, kata `utility` tentunya sudah tak asing di dengar, hampir di setiap project, utility ini akan selalu dibuat. Utility biasanya isinya adalah **functions2**, atau **service**, yang sifatnya reusable atau istilahnya *'write once, use many times'*. 
