@@ -66,6 +66,9 @@ export default (theme) => ({
         },
         "& .container-sm": {
             maxWidth: '500px',
+        },
+        "& sub": {
+            lineHeight: '.2em',
         }
     },
     postCoverImg: {
