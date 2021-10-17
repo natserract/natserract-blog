@@ -37,9 +37,17 @@ export default (theme) => ({
         },
         "& ol": {
             padding: '0 0 0 30px',
+
+            "& li": {
+                marginBottom: 7,
+            }
         },
         "& ul": {
-            padding: '0 0 0 30px'
+            padding: '0 0 0 30px',
+
+            "& li": {
+                marginBottom: 7,
+            }
         },
         "& .section-group-about": {
             margin: "0 0 35px",
