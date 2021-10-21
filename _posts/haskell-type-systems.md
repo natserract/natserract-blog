@@ -554,7 +554,7 @@ class Result a b c where
 
 instance ...
 ```
-Kelas tipe `Result` mempunyai 3 variabel tipe, `a b c`. Functional dependencies mempunnyai aturan bahwa **setiap variabel tipe pada kelas tipe** itu harus diikat(digunakan) oleh setiap method/operasi-nya. Error tersebut muncul, karena pada method `single` tidak menggunakan varibel tipe `c`, ini menyebabkan *ambigous*. Coba kita tambahkan fundeps:
+Kelas tipe `Result` mempunyai 3 variabel tipe, `a b c`. Kelas tipe mempunyai aturan bahwa **setiap variabel tipe pada kelas tipe** itu harus diikat(digunakan) oleh setiap method/operasi-nya. Error tersebut muncul, karena pada method `single` tidak menggunakan varibel tipe `c`, ini menyebabkan *ambigous*. Coba kita tambahkan fundeps:
 
 ```hs
 class Result a b c | a b -> c where
