@@ -1,6 +1,6 @@
 ---
 title: "Match Match Laziness on Expression"
-date: "2021-10-21"
+date: "2021-10-27"
 author: "Alfin Surya"
 excerpt: "Little discussion about pattern matching, expression, and lazy evaluation ~ /A couple of onomatopoeic myths circulating about the origin of this term/"
 coverImage: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-yKUxH6tgln0%2FT-cQ-bH8BRI%2FAAAAAAAAOpw%2FEhoqOWD-sRI%2Fs1600%2FTugu-Pancoran-Perbedaan-Jakarta-Jaman-Dulu-dan-Sekarang.jpg&f=1&nofb=1"
