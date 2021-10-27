@@ -3,10 +3,8 @@ title: "Serba Otomatis dengan Shell Script"
 date: "2020-05-08"
 author: "Alfin Surya"
 excerpt: "Tingkatkan produktivitas kerja Anda dengan shellscript"
-coverImage: 'https://i.imgur.com/9RydIkB.jpg'
+coverImage: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F1Z4aXa0t4r8%2Fmaxresdefault.jpg&f=1&nofb=1'
 ---
-
-*Source image: [nullbyte](null-byte.wonderhowto.com)*
 
 Bagi kalian yang mau cepet, dan serba otomatis mungkin ini bisa bermanfaat buat kalian. 
 
@@ -24,7 +22,7 @@ Contoh casenya kali ini adalah, ceritanya bambang lagi buat project Angular, dan
 
 Struktur direktorinya seperti ini:
 
-
+```sh
 ├── components
     ├── button                   
     ├──── button.module.ts
@@ -32,6 +30,7 @@ Struktur direktorinya seperti ini:
     ├── slider                   
     ├──── slider.module.ts
     ├──── compile.ts  
+```
 
 Dan isinya sekilas seperti ini:
 
