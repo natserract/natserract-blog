@@ -91,7 +91,7 @@ let (a@(x:xs), _)  = ([1, 2, 3], False)
 Yang dilakukan pada operasi diatas sebenernya seperti ini:
 ```hs
 let (a@(x:xs), _) 
-  = ([1, 2, 3], False) in a == [1, 2, 3] && x == 3 && xs == [2, 3]
+  = ([1, 2, 3], False) in a == [1, 2, 3] && x == 1 && xs == [2, 3]
 ```
 Jadi `a@(x:xs)` merupakan **as pattern** atau identifier yang digunakan untuk mengestrak bagian,
 - All `a` = [1, 2, 3]
@@ -162,7 +162,7 @@ recList n = n : recList n
 
 -- recList 5
 ```
-> Seperti yang kamu ketahui, haskell tidak memiliki loop seperti di bahasa lain, jadi untuk melakukan perulangan sejenis membutuhkan recursive function.
+> Seperti yang kamu ketahui, haskell tidak memiliki **loop** seperti di bahasa lain, jadi untuk melakukan perulangan sejenis membutuhkan recursive function.
 
 Konstruktor `:` pada fungsi `recList` akan menghasilkan nilai list yang dimulai *(head)* dari `5` dan diakhiri *(tail)* `recList 5` dengan nilai tak terbatas `(5:5:(5:...))`. 
 
@@ -226,7 +226,7 @@ print . take' 3 $ recList 5
 ``` 
 Maka hasilnya `[5, 5, 5]`. Hasil akhir untuk menilai ekspresi asli adalah **thunk**.
 
-Haskell merupakan bahasa yang tidak ketat (lazy) secara default, tetapi kita bisa membuatnya *strict*. Inipun diperlukan alasan performance, umumnya biarkan bersifat unstrict/lazy dan masalah optimisasi bisa nanti dilakukan.
+Haskell merupakan bahasa yang tidak ketat (lazy) secara default, tetapi kita bisa membuatnya *strict*. Inipun diperlukan karena alasan performance. Umumnya biarkan bersifat unstrict/lazy dan masalah optimisasi bisa nanti dilakukan.
 
 > "Haskell started as a language to research laziness, and so it remains a very important part of what Haskell is; but in my opinion it's not the part I like the most. Laziness forced the creators of Haskell to use pure functions (because it is hard to control evaluation order in a lazy language, and you need to control evaluation order with side-effecting procedures). Haskell also has a really great type system. Those two aspects (pure FP & strong static algebraic datatypes with inference) are what bring me the most value in Haskell. But it's important to get comfortable with the basics of lazy evaluation!" **@gabedamien**
 
