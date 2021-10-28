@@ -18,8 +18,6 @@ const Home = ({ allPosts }) => {
     return <>Data is not ready (is undefined?)</>
   }
 
-  console.log('allPosts', allPosts)
-
   return (
     <Layout>
       <div className={classes.introSection}>

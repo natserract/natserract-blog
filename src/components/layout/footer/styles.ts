@@ -1,10 +1,12 @@
 import {
     Theme,
     createStyles
-  } from "@material-ui/core/styles";
+} from "@material-ui/core/styles";
 
 export default (theme: Theme) => createStyles({
     footer: {
+        display: 'flex',
+        alignItems: 'center',
         fontSize: '15px',
         lineHeight: '1.3em',
         textAlign: 'left',
@@ -18,5 +20,14 @@ export default (theme: Theme) => createStyles({
         // [theme.breakpoints.only('xs')]: {
         //     width: '90%',
         // }
+    },
+    license: {
+        paddingRight: '18px',
+
+        [theme.breakpoints.only("xs")]: {
+            "& img": {
+                width: 75,
+            }
+        }
     }
 })
