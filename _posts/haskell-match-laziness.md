@@ -2,7 +2,7 @@
 title: "Match Match Laziness on Expression"
 date: "2021-10-27"
 author: "Alfin Surya"
-excerpt: "Talk about pattern matching, expression, and lazy evaluation ~ /A couple of onomatopoeic myths circulating about the origin of this term/"
+excerpt: "So, you know quite some bits of Haskell now and are willing to dig a bit deeper, understand when something in your code is going to get evaluated, and when it won’t? You have just landed in the right place.Talk about pattern matching, expression, and lazy evaluation"
 coverImage: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-yKUxH6tgln0%2FT-cQ-bH8BRI%2FAAAAAAAAOpw%2FEhoqOWD-sRI%2Fs1600%2FTugu-Pancoran-Perbedaan-Jakarta-Jaman-Dulu-dan-Sekarang.jpg&f=1&nofb=1"
 ---
 
