@@ -26,7 +26,7 @@ const Home = ({ allPosts }) => {
       </div>
       <div className={classes.blogSection}>
         <Typography variant="h3" component="h2">
-          Blog Posts
+          Bλog Posts
           <span className={classes.toc}>(favorites have sparkles)</span>
         </Typography>
         <Posts data={allPosts} />
