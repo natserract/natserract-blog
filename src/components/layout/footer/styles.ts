@@ -11,6 +11,11 @@ export default (theme: Theme) => createStyles({
         lineHeight: '1.3em',
         textAlign: 'left',
         maxWidth: 800,
+        justifyContent: 'space-between',
+
+        "& span": {
+            paddingRight: 25
+        },
         // position: 'absolute',
         // width: '100%',
         // left: '50%',
@@ -22,8 +27,6 @@ export default (theme: Theme) => createStyles({
         // }
     },
     license: {
-        paddingRight: '18px',
-
         [theme.breakpoints.only("xs")]: {
             "& img": {
                 width: 75,
