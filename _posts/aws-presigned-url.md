@@ -169,11 +169,9 @@ const UploadPage = () => {
         console.log(data)
 
         if (data.status === 204) {
-          console.log('success')
-          return data
+          ... // success
         } else {
-          console.log('fail')
-          return 'fail'
+          ... // fail
         }
       })
     }
@@ -189,7 +187,6 @@ const UploadPage = () => {
   return (
      <form onSubmit={handleSubmit}>
         <input type="file" onChange={handleChange} multiple />
-        <br />
         <button type="submit">Upload</button>
      </form>
   )
