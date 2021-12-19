@@ -2,7 +2,7 @@
 title: "AWS S3 Presigned Url"
 date: "2021-12-18"
 author: "Alfin Surya"
-excerpt: "Secure your AWS S3 uploads with presigned URLs"
+excerpt: "Securing your AWS S3 using presigned URLs"
 coverImage: "https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png"
 ---
 Secara umum metode pengupload-an biasanya file disimpan ke server, meskipun ini cara yang sah2 saja, tapi memiliki dampak yang sangat signifikan:
