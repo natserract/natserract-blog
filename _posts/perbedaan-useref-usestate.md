@@ -2,7 +2,7 @@
 title: "React Hooks: useRef vs useState"
 date: "2021-02-14"
 author: "Alfin Surya"
-excerpt: "Hook yang mengembalikan objek ref berupa properti .current yang sifatnya mutable atau bisa diubah. useRef() berguna tidak hanya sekedar attribut ref, tapi juga berfungsi untuk"
+excerpt: "Hook yang mengembalikan objek ref berupa properti .current yang sifatnya mutable atau bisa diubah. useRef() berguna tidak hanya sekedar attribut ref, tapi juga berfungsi untuk mempertahankan nilai yang berubah selama masa hidup komponen."
 ---
 
 Hook yang mengembalikan objek ref berupa properti `.current` yang sifatnya mutable atau bisa diubah. `useRef ()` berguna tidak hanya sekedar attribut `ref`, tapi juga berfungsi untuk mempertahankan nilai yang berubah selama masa hidup komponen. Perhatikan kode dibawah ini:

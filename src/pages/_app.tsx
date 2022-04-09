@@ -25,6 +25,9 @@ const HeadDocument = () => (
 
     <link rel="stylesheet" href="/static/vendors/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600&display=swap" rel="stylesheet" /> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GFPP6R1VS"></script>
     <script

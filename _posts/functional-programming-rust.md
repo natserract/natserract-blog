@@ -2,7 +2,7 @@
 title: "Functional Programming di Rust"
 date: "2020-04-22"
 author: "Alfin Surya"
-excerpt: "Functional programming (FP) adalah paradigma pemrograman dimana memungkinkan kita untuk menulis kode program yang ekspresif, ringkas, dan elegan. Functional programming juga membantu developer untuk mengatur kodenya agar tidak"
+excerpt: "Functional programming (FP) adalah paradigma pemrograman dimana memungkinkan kita untuk menulis kode program yang ekspresif, ringkas, dan elegan. Functional programming juga membantu developer untuk mengatur kodenya agar tidak DRY (Don't Repeat Yourself) alias tidak menulis kode yang sama berulang-ulang kali. Functional language lainnya contohnya seperti Lisp, Clojure, Erlang, Haskell, R, dan masih banyak lagi"
 coverImage: 'https://res.cloudinary.com/practicaldev/image/fetch/s--lNRD-vey--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/2y19pxhcq4ltvzq569mv.png'
 favorite: 'yes'
 ---

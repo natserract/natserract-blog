@@ -46,7 +46,6 @@ export default (theme: Theme) => createStyles({
 
     "& h1": {
       fontSize: "57px",
-      fontFamily: "sans-serif",
       fontWeight: 600,
       color: '#1d1d27',
 
@@ -85,7 +84,7 @@ export default (theme: Theme) => createStyles({
       },
 
       "& > a": {
-        fontSize: '18px',
+        fontSize: '17px',
       }
     }
   },

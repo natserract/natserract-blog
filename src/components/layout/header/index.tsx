@@ -36,6 +36,7 @@ const Header: ComponentType<PropsI> = ({ title, menuItems }: PropsI) => {
                     <SocialMedia items={socialMediaItems} />
                 </div>
             </nav>
+            
         </header>
     )
 }

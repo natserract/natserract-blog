@@ -2,7 +2,10 @@
 title: "AWS S3 Presigned Url"
 date: "2021-12-18"
 author: "Alfin Surya"
-excerpt: "Securing your AWS S3 using presigned URLs"
+excerpt: "Secara umum metode pengupload-an biasanya file disimpan ke server, meskipun ini cara yang sah2 saja, tapi memiliki dampak yang sangat signifikan:
+- Mengunggah file ke server dapat berdampak negatif pada sumber daya sistemnya (RAM dan CPU), terutama ketika berurusan dengan file yang lebih besar atau pemrosesan gambar. 
+- Kalo storage server sudah penuh, harus upgrade terus menerus (siap2 bakar duit teros)
+- Masalah keamanan"
 coverImage: "https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png"
 ---
 Secara umum metode pengupload-an biasanya file disimpan ke server, meskipun ini cara yang sah2 saja, tapi memiliki dampak yang sangat signifikan:

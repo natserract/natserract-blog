@@ -7,7 +7,7 @@ export default (theme: Theme) => createStyles({
     footer: {
         display: 'flex',
         alignItems: 'center',
-        fontSize: '15px',
+        fontSize: '13px',
         lineHeight: '1.3em',
         textAlign: 'left',
         maxWidth: 800,

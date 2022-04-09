@@ -2,7 +2,7 @@
 title: "Haskell: Type Systems. Zero Runtime Errors"
 date: "2021-10-17"
 author: "Alfin Surya"
-excerpt: "Sebagai pengguna type system,  fitur ini memiliki beberapa keuntungan tersendiri selama proses development seperti menjaga konsistensi data, mengurangi runtime"
+excerpt: "Sebagai pengguna type system,  fitur ini memiliki beberapa keuntungan tersendiri selama proses development seperti menjaga konsistensi data, mengurangi runtime errors, dll. Tidak bisa dipungkiri lagi, kebanyakan jenis bahasa pemrogaman yg adopt fitur ini rata-rata functional language, seperti: ML (Meta Language), OCaml, Haskell, etc."
 coverImage: "https://i1.wp.com/bestsellingcarsblog.com/wp-content/uploads/2019/07/Toyota-Kijang-Indonesia-1990.jpg?resize=600%2C400"
 favorite: 'yes'
 ---

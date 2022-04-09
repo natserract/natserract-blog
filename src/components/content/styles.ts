@@ -10,6 +10,23 @@ export default (theme) => ({
         },
     },
     content: {
+        "& h2, h3, h4, h5, h6": {
+           
+        },
+        "& h2": {
+            marginTop: 30,
+            position: 'relative',
+            display: 'inline-block',
+
+            "&:after": {
+                content: `'¶'`,
+                position: 'absolute',
+                right: -33,
+                width: 15,
+                height: 30,
+                color: '#DDD',
+            }
+        },
         "& blockquote": {
             borderLeft: 'solid 4px #d2d6db',
             padding: '0 0 0 20px',

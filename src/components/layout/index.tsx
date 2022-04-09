@@ -16,7 +16,7 @@ const config = {
 
 const useStyles = makeStyles(styles);
 const footerContent =
-    `© ${config.year} ${config.author}. Posting ini tersedia di bawah Lisensi saya sendiri.`
+    `© ${config.year}, ${config.author}. Opinions are my own.`
 
 const Layout: React.FC = (props) => {
     const classes = useStyles()

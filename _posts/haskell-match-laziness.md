@@ -1,5 +1,5 @@
 ---
-title: "Match Match Laziness on Expression"
+title: "Lazy Evaluation in Haskell"
 date: "2021-10-27"
 author: "Alfin Surya"
 excerpt: "So, you know quite some bits of Haskell now and are willing to dig a bit deeper, understand when something in your code is going to get evaluated, and when it won’t? You have just landed in the right place. Talk about pattern matching, expression, and lazy evaluation"

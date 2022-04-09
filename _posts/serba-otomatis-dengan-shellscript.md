@@ -2,7 +2,8 @@
 title: "Serba Otomatis dengan Shell Script"
 date: "2020-05-08"
 author: "Alfin Surya"
-excerpt: "Tingkatkan produktivitas kerja Anda dengan shellscript"
+excerpt: "Tingkatkan produktivitas kerja Anda dengan shellscript. Bagi kalian yang mau cepet, dan serba otomatis mungkin ini bisa bermanfaat buat kalian. 
+Nah, shell script?  fungsinya buat apa?, shell script sebenernya adalah sebuah bahasa pemrograman yang berfungsi sebagai jembatan antara user dan kernel untuk menjalankan perintah2 Unix/Linux shell."
 coverImage: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F1Z4aXa0t4r8%2Fmaxresdefault.jpg&f=1&nofb=1'
 ---
 

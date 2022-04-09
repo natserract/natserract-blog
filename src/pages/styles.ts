@@ -11,14 +11,16 @@ export default (theme) => ({
             borderBottom: 'solid 2px #1d1d27',
             paddingBottom: '7px',
             marginBottom: 25,
-            fontSize: 35,
-            fontFamily: 'sans-serif',
+            fontSize: 41,
             fontWeight: 600,
         }
     },
     toc: {
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: 300,
         fontStyle: 'italic',
+    },
+    introImg: {
+        
     }
 });

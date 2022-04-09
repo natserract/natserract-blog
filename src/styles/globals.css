@@ -5,10 +5,10 @@ html, body {
 
 body {
   background-color: #fff;
-  font-size: 14pt;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   font-family: sans-serif;
-  color: #1d1d27;
+  color: black;
   line-height: 1.6em;
 }
 
@@ -17,7 +17,7 @@ body.loading-indicator {
 }
 
 a {
-  color: rgb(2, 117, 216);
+  color: rgb(2, 131, 242);
   text-decoration: none;
 }
 
@@ -37,11 +37,11 @@ ul {
 
 @media only screen and  (min-width: 600px) {
   h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
 
-  h2, h3, h4, h5, h6 {
-    font-size: 28px;
+  h2 {
+    font-size: 33px;
   }
 }
 
@@ -49,12 +49,17 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.7px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-family: 'Abhaya Libre', serif;
+}
+
+h3, h4, h5, h6 {
+  font-size: 26px;
 }
 
 @media only screen and (max-width: 600px) {
-  h3, h4 {
-    font-size: 22px;;
+  h2{
+    font-size: 30px;
   }
 }
 

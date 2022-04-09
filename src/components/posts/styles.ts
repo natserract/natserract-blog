@@ -19,6 +19,7 @@ export default (theme: Theme) => createStyles({
   postsHeadContainer: {
     margin: '0 0 10px',
     borderBottom: 'dashed 1px #595959',
+    fontFamily: `'Abhaya Libre', serif`,
 
     "& time": {
       float: 'right',
@@ -34,7 +35,8 @@ export default (theme: Theme) => createStyles({
     "& a": {
       display: "inline",
       marginBottom: "3px",
-      fontSize: "20px",
+      fontSize: "22px",
+      fontWeight: 'bold',
       position: 'relative',
     },
   },

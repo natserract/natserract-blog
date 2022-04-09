@@ -2,7 +2,8 @@
 title: "Remote Data in React with Render Props"
 date: "2021-03-09"
 author: "Alfin Surya"
-excerpt: "Teknik dimana kita bisa berbagi data antar komponen yang di passing melalui props. Props ini nantinya akan mengembalikan sebuah nilai berupa fungsi."
+excerpt: "Bagi kamu para react dev, ada yang sudah dengar ini? Iyap, render props adalah sebuah teknik di react dimana kita bisa berbagi data antar komponen yang di passing melalui props. 
+Props ini nantinya akan mengembalikan sebuah nilai berupa fungsi. Render props sendiri terdapat 2 jenis cara, ada yang melalui props ada pula melalui children"
 # coverImage: "https://cdn-images-1.medium.com/max/1000/1*g_cxbFU5GHUzn43-FCnd_w.png"
 ---
 

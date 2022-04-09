@@ -2,7 +2,11 @@
 title: "Run Your Function Only Once"
 date: "2021-09-17"
 author: "Alfin Surya"
-excerpt: "Terkadang di beberapa kondisi mungkin kita perlu menjalankan suatu fungsi hanya sekali meskipun pemanggilannya berkali-kali. Ini bisa terjadi"
+excerpt: "Terkadang di beberapa kondisi mungkin kita perlu menjalankan suatu fungsi hanya sekali meskipun pemanggilannya berkali-kali. Ini bisa terjadi, tergantung kondisi dan case masing-masing. Contohnya dibeberapa case seperti:
+- Randoming number (first execution)
+- Handling event
+- Operasi basis data
+- Dan operasi lainnya"
 ---
 
 Terkadang di beberapa kondisi mungkin kita perlu menjalankan suatu fungsi hanya sekali meskipun pemanggilannya berkali-kali. Ini bisa terjadi, tergantung kondisi dan case masing-masing. Contohnya dibeberapa case seperti:

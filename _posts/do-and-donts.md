@@ -2,7 +2,8 @@
 title: "Do's and Dont's"
 date: "2021-11-01"
 author: "Alfin Surya"
-excerpt: "Not force things! Just opinion based on my experience. You are what you believe"
+excerpt: "Not force things! Just opinion based on my experience. You are what you believe. 
+Ini murni pendapat saya, tidak memaksa orang untuk pro atau kontra. Lihat dan ambil manfaatnya. Diambil berdasarkan kisah nyata pengalaman pribadi, do's apa yang saya lakukan versi saya, dan dont's apa yang harusnya tidak dilakukan."
 coverImage: "https://c.pxhere.com/photos/dd/70/roses_bouquet_colorful_flowers-1342500.jpg!d"
 ---
 

@@ -2,7 +2,7 @@
 title: "Method Overidding, Monkey Patching"
 date: "2021-09-17"
 author: "Alfin Surya"
-excerpt: "Monkey patching atau tambalan monyet ini merupakan istilah yang merujuk pada perubahan kode, dimana pada intinya ini adalah sebuah cara/teknik untuk memperluas"
+excerpt: "Huh, setelah sekian lama ga nulis lagi, kali ini saya mencoba untuk sharing kembali, karena saya pikir aga eman kalau ga dishare. Oke langsung ke topik saja, akhir-akhir ini saya lebih banyak berkutat pada hal-hal yang bersangkutan dengan diagram. Library yang saya gunakan adalah MxGraph, walaupun proses pengembangannya berhenti tapi lib ini cukup mumpuni dikelasnya dan masih layak untuk digunakan (dengan alasan yang cukup hati2)."
 coverImage: "https://i.kym-cdn.com/entries/icons/facebook/000/000/521/13809242.b4f8cba9.1200x1200o.60dc4f38b621.jpg"
 ---
 
