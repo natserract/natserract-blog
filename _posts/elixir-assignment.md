@@ -145,7 +145,7 @@ Secara default semua data di Elixir bersifat [immutable](https://en.wikipedia.or
 
 ### Elixir GC
 
-Elixir adalah [garbage-collected (GC) language](https://www.erlang.org/doc/apps/erts/garbagecollection), yang berarti Anda tidak perlu ** mengatur memori secara manual**, ini sudah dilakukan secara otomatis oleh Elixir melalui VM Erlang. Setiap proses di Erlang memiliki tumpukan-tumpukan yang dialokasikan dalam blok memori. VM Erlang akan melacak variabel mana yang akan digunakan di masa mendatang dan variabel mana yang dapat dihapus dari memori. Ketika sebuah variabel sudah diluar cakupan atau tidak dapat direferensikan lagi maka nantinya BEAM secara otomatis akan membersihkan memori. Umumnya, sebagian besar memori akan dibagi antara versi lama dan baru.
+Elixir adalah [garbage-collected (GC) language](https://www.erlang.org/doc/apps/erts/garbagecollection), yang berarti Anda tidak perlu **mengatur memori secara manual**, ini sudah dilakukan secara otomatis oleh Elixir melalui VM Erlang. Setiap proses di Erlang memiliki tumpukan-tumpukan yang dialokasikan dalam blok memori. VM Erlang akan melacak variabel mana yang akan digunakan di masa mendatang dan variabel mana yang dapat dihapus dari memori. Ketika sebuah variabel sudah diluar cakupan atau tidak dapat direferensikan lagi maka nantinya BEAM secara otomatis akan membersihkan memori. Umumnya, sebagian besar memori akan dibagi antara versi lama dan baru.
 
 ## Immutability (FP Principles)
 
