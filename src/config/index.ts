@@ -1,3 +1,3 @@
-export * from './blog.config'
-export * from './mui-theme.config'
-export * from './env.config'
+export * from "./blog.config";
+export * from "./mui-theme.config";
+export * from "./env.config";

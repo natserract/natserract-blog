@@ -1,40 +1,39 @@
-import { makeStyles, useTheme } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
-import { useCallback, useEffect, useState } from 'react'
+import { makeStyles, useTheme } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
+import { useCallback, useEffect, useState } from "react";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   scrollToTopContainer: {
-    position: 'fixed',
+    position: "fixed",
     right: 80,
     bottom: 35,
-    height: '30px',
-    cursor: 'pointer',
+    height: "30px",
+    cursor: "pointer",
 
     [`${theme.breakpoints.down("sm")} and (orientation: landscape)`]: {
       right: 20,
-      bottom: 30
+      bottom: 30,
     },
 
     [`${theme.breakpoints.only("xs")} and (orientation: portrait)`]: {
       right: 20,
-      bottom: 30
+      bottom: 30,
     },
   },
   scrollToTopBtn: {
+    "&:hover": {
+      background: "transparent !important",
 
-    '&:hover': {
-      background: 'transparent !important',
-
-      "& span": { 
-        textDecoration: 'underline',
-      }
-    }
-  }
-}))
+      "& span": {
+        textDecoration: "underline",
+      },
+    },
+  },
+}));
 
 const ScrollToTop = () => {
-  const classes = useStyles()
-  const [showScroll, setShowScroll] = useState(false)
+  const classes = useStyles();
+  const [showScroll, setShowScroll] = useState(false);
 
   // From: https://gist.github.com/romanonthego/223d2efe17b72098326c82718f283adb
   const onScrollToTop = useCallback(() => {
@@ -43,35 +42,43 @@ const ScrollToTop = () => {
       window.scroll({
         top: 0,
         left: 0,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     } catch (error) {
       // just a fallback for older browsers
       window.scrollTo(0, 0);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     function checkScrollTop() {
       if (!showScroll && window.pageYOffset > 400) {
-        setShowScroll(true)
+        setShowScroll(true);
       } else if (showScroll && window.pageYOffset <= 400) {
-        setShowScroll(false)
+        setShowScroll(false);
       }
     }
 
-    window.addEventListener('scroll', checkScrollTop)
+    window.addEventListener("scroll", checkScrollTop);
 
-    return () => window.removeEventListener('scroll', checkScrollTop)
-  }, [showScroll])
+    return () => window.removeEventListener("scroll", checkScrollTop);
+  }, [showScroll]);
 
   return (
     showScroll && (
       <div className={classes.scrollToTopContainer}>
-        <Button className={classes.scrollToTopBtn} onClick={onScrollToTop} disableRipple variant="text"> To The Top &#x2934;</Button>
+        <Button
+          className={classes.scrollToTopBtn}
+          onClick={onScrollToTop}
+          disableRipple
+          variant="text"
+        >
+          {" "}
+          To The Top &#x2934;
+        </Button>
       </div>
     )
-  )
-}
+  );
+};
 
-export default ScrollToTop
+export default ScrollToTop;

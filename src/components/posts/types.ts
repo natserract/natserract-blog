@@ -1,10 +1,10 @@
 export interface PropsI {
-    data: Array<PostMetaI>
+  data: Array<PostMetaI>;
 }
 interface PostMetaI {
-    title: string;
-    excerpt: string;
-    slug: string;
-    date: Date;
-    [x: string]: any;
+  title: string;
+  excerpt: string;
+  slug: string;
+  date: Date;
+  [x: string]: any;
 }

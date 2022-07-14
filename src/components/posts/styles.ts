@@ -1,59 +1,57 @@
-import {
-  Theme,
-  createStyles
-} from "@material-ui/core/styles";
+import { Theme, createStyles } from "@material-ui/core/styles";
 
-export default (theme: Theme) => createStyles({
-  posts: {
-    display: "block",
-    marginBottom: "20px",
-
-    [theme.breakpoints.only("xs")]: {
-      marginBottom: "33px",
-    },
-
-    "& .cursor-loading": {
-      cursor: "progress",
-    },
-  },
-  postsHeadContainer: {
-    margin: '0 0 10px',
-    borderBottom: 'dashed 1px #595959',
-    fontFamily: `'Abhaya Libre', serif`,
-
-    "& time": {
-      float: 'right',
-      marginTop: 6,
+export default (theme: Theme) =>
+  createStyles({
+    posts: {
+      display: "block",
+      marginBottom: "20px",
 
       [theme.breakpoints.only("xs")]: {
-        float: 'none',
-        display: 'block',
-        margin: '0 0 6px',
-      }
-    },
+        marginBottom: "33px",
+      },
 
-    "& a": {
-      display: "inline",
-      marginBottom: "3px",
-      fontSize: "22px",
-      fontWeight: 'bold',
-      position: 'relative',
+      "& .cursor-loading": {
+        cursor: "progress",
+      },
     },
-  },
-  postDate: {
-    fontSize: "16px",
-    marginLeft: "8px",
-    fontWeight: 400,
-    fontStyle: 'italic',
+    postsHeadContainer: {
+      margin: "0 0 10px",
+      borderBottom: "dashed 1px #595959",
+      fontFamily: `'Abhaya Libre', serif`,
 
-    [theme.breakpoints.only("xs")]: {
-      margin: "0",
+      "& time": {
+        float: "right",
+        marginTop: 6,
+
+        [theme.breakpoints.only("xs")]: {
+          float: "none",
+          display: "block",
+          margin: "0 0 6px",
+        },
+      },
+
+      "& a": {
+        display: "inline",
+        marginBottom: "3px",
+        fontSize: "22px",
+        fontWeight: "bold",
+        position: "relative",
+      },
     },
-  },
-  postListsContainer: {
-    paddingLeft: "0",
-  },
-  favoriteIcon: {
-    paddingLeft: 5,
-  }
-});
+    postDate: {
+      fontSize: "16px",
+      marginLeft: "8px",
+      fontWeight: 400,
+      fontStyle: "italic",
+
+      [theme.breakpoints.only("xs")]: {
+        margin: "0",
+      },
+    },
+    postListsContainer: {
+      paddingLeft: "0",
+    },
+    favoriteIcon: {
+      paddingLeft: 5,
+    },
+  });

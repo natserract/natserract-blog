@@ -58,17 +58,17 @@ const palette = {
 };
 
 const typography = {
-  fontFamily: 'Serif',
+  fontFamily: "Serif",
   h1: {
-    fontFamily: 'Serif',
+    fontFamily: "Serif",
   },
   h2: {
-    fontFamily: 'Serif',
+    fontFamily: "Serif",
   },
   h3: {
-    fontFamily: 'Serif',
+    fontFamily: "Serif",
   },
-}
+};
 
 export default {
   globalStyle,

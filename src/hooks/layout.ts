@@ -1,12 +1,12 @@
-import { useEffect, useCallback } from 'react'
+import { useEffect, useCallback } from "react";
 
 export const useLoadingIndicator = (state, setState) => {
-    useEffect(() => {
-        if (state) document.body.classList.add('loading-indicator')
-        return () => document.body.classList.remove('loading-indicator')
-    }, [state])
+  useEffect(() => {
+    if (state) document.body.classList.add("loading-indicator");
+    return () => document.body.classList.remove("loading-indicator");
+  }, [state]);
 
-    const handleClick = useCallback(() => setState(true), [])
+  const handleClick = useCallback(() => setState(true), []);
 
-    return handleClick
-}
+  return handleClick;
+};

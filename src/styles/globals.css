@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
 }
@@ -31,11 +32,10 @@ a:hover {
 }
 
 ul {
- padding-left: 15px;
+  padding-left: 15px;
 }
 
-
-@media only screen and  (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   h1 {
     font-size: 40px;
   }
@@ -45,24 +45,31 @@ ul {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: -0.7px;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 10px;
-  font-family: 'Abhaya Libre', serif;
+  font-family: "Abhaya Libre", serif;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 26px;
 }
 
 @media only screen and (max-width: 600px) {
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
-
 
 /* If you want to using pre wrap */
 pre {

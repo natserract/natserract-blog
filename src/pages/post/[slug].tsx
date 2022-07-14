@@ -1,58 +1,58 @@
-import React from 'react';
-import { getPostBySlug, getAllPosts } from '../../../lib';
-import markdownToHtml from '../../../lib/markdownToHtml';
-import Box from '@material-ui/core/Box'
-import Layout from '~/src/components/layout'
-import Content from '~/src/components/content'
+import React from "react";
+import { getPostBySlug, getAllPosts } from "../../../lib";
+import markdownToHtml from "../../../lib/markdownToHtml";
+import Box from "@material-ui/core/Box";
+import Layout from "~/src/components/layout";
+import Content from "~/src/components/content";
 
 const Post = ({ post }) => {
-    if (!post) {
-        return <Box>Post is undefined</Box>
-    }
+  if (!post) {
+    return <Box>Post is undefined</Box>;
+  }
 
-    return (
-        <Layout>
-            <Content data={post} />
-        </Layout>
-    )
-}
+  return (
+    <Layout>
+      <Content data={post} />
+    </Layout>
+  );
+};
 
 export async function getStaticProps({ params }) {
-    const post: PostI = getPostBySlug(params.slug, [
-        "title",
-        "excerpt",
-        "date",
-        "slug",
-        "author",
-        "content",
-        "coverImage",
-        "coverImageAlt",
-        "draft",
-        "favorite",
-    ])
+  const post: PostI = getPostBySlug(params.slug, [
+    "title",
+    "excerpt",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "coverImage",
+    "coverImageAlt",
+    "draft",
+    "favorite",
+  ]);
 
-    const content = await markdownToHtml(post.content || '')
+  const content = await markdownToHtml(post.content || "");
 
-    return {
-        props: {
-            post: {
-                ...post,
-                content,
-            },
-        },
-    }
+  return {
+    props: {
+      post: {
+        ...post,
+        content,
+      },
+    },
+  };
 }
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(["slug"])
-    return {
-        paths: posts.map((post) => {
-            return {
-                params: { ...post },
-            }
-        }),
-        fallback: false,
-    }
+  const posts = getAllPosts(["slug"]);
+  return {
+    paths: posts.map((post) => {
+      return {
+        params: { ...post },
+      };
+    }),
+    fallback: false,
+  };
 }
 
 export default Post;

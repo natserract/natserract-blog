@@ -1,95 +1,91 @@
-import {
-  Theme,
-  createStyles
-} from "@material-ui/core/styles";
+import { Theme, createStyles } from "@material-ui/core/styles";
 
-export default (theme: Theme) => createStyles({
-  navigationContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginTop: '7px',
+export default (theme: Theme) =>
+  createStyles({
+    navigationContainer: {
+      display: "flex",
+      justifyContent: "space-between",
+      marginTop: "7px",
 
-    [theme.breakpoints.only("xs")]: {
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-    }
-  },
-  header: {
-  },
-  socialMedia: {
-    display: 'flex',
-    alignItems: 'center',
-    listStyle: 'none',
-    padding: '0',
-    margin: '0',
-
-    [theme.breakpoints.only("xs")]: {
-      margin: '10px 0 0',
+      [theme.breakpoints.only("xs")]: {
+        flexDirection: "column",
+        alignItems: "flex-start",
+      },
     },
+    header: {},
+    socialMedia: {
+      display: "flex",
+      alignItems: "center",
+      listStyle: "none",
+      padding: "0",
+      margin: "0",
 
-    "& li": {
-      paddingRight: '15px',
+      [theme.breakpoints.only("xs")]: {
+        margin: "10px 0 0",
+      },
 
-      "& a": {
-        textDecoration: 'none',
-      }
-    }
-  },
-  brandLink: {
-    display: "inline-block",
-    fontSize: "35px",
-    textDecoration: "none !important",
+      "& li": {
+        paddingRight: "15px",
 
-    [theme.breakpoints.only("xs")]: {
-      display: "block",
+        "& a": {
+          textDecoration: "none",
+        },
+      },
     },
-
-    "& h1": {
-      fontSize: "57px",
-      fontWeight: 600,
-      color: '#1d1d27',
+    brandLink: {
+      display: "inline-block",
+      fontSize: "35px",
+      textDecoration: "none !important",
 
       [theme.breakpoints.only("xs")]: {
         display: "block",
       },
-    },
-  },
-  subTitle: {
-    display: "block",
-    fontSize: "33px",
-    fontWeight: "lighter",
-    color: '#1d1d27',
-    fontStyle: 'italic',
-    marginTop: '-5px',
 
-  },
-  navigation: {},
-  menuLists: {
-    display: "flex",
-    justifyContent: "space-between",
-    listStyle: 'none',
-    padding: '0',
-    margin: '0',
+      "& h1": {
+        fontSize: "57px",
+        fontWeight: 600,
+        color: "#1d1d27",
 
-    "& li": {
-      [theme.breakpoints.up('sm')]: {
-        paddingRight: '20px',
-      },
-
-      [theme.breakpoints.only('xs')]: {
-        padding: '0 10px',
-        "&:nth-of-type(1)": {
-          paddingLeft: 0
+        [theme.breakpoints.only("xs")]: {
+          display: "block",
         },
       },
+    },
+    subTitle: {
+      display: "block",
+      fontSize: "33px",
+      fontWeight: "lighter",
+      color: "#1d1d27",
+      fontStyle: "italic",
+      marginTop: "-5px",
+    },
+    navigation: {},
+    menuLists: {
+      display: "flex",
+      justifyContent: "space-between",
+      listStyle: "none",
+      padding: "0",
+      margin: "0",
 
-      "& > a": {
-        fontSize: '17px',
-      }
-    }
-  },
-  brandSection: {
-    borderBottom: 'solid 2px #1d1d27',
-    paddingBottom: '7px',
-  }
-});
+      "& li": {
+        [theme.breakpoints.up("sm")]: {
+          paddingRight: "20px",
+        },
+
+        [theme.breakpoints.only("xs")]: {
+          padding: "0 10px",
+          "&:nth-of-type(1)": {
+            paddingLeft: 0,
+          },
+        },
+
+        "& > a": {
+          fontSize: "17px",
+        },
+      },
+    },
+    brandSection: {
+      borderBottom: "solid 2px #1d1d27",
+      paddingBottom: "7px",
+    },
+  });

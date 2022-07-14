@@ -1,20 +1,20 @@
 {
-    "menuItems": [
-        {
-            "name": "Main",
-            "path": "/"
-        },
-        {
-            "name": "About",
-            "path": "/about"
-        },
-        {
-            "name": "Talks",
-            "path": "/talks"
-        },
-        {
-            "name": "Contributing",
-            "path": "/contributing"
-        }
-    ]
+  "menuItems": [
+    {
+      "name": "Main",
+      "path": "/"
+    },
+    {
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "name": "Talks",
+      "path": "/talks"
+    },
+    {
+      "name": "Contributing",
+      "path": "/contributing"
+    }
+  ]
 }
