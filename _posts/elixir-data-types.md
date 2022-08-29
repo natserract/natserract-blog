@@ -239,7 +239,7 @@ iex(15)> [1, 2, 3, 4] -- [2, 4]
 [1, 3]
 ```
 
-> Data di elixir bersifat [**immutable**](C.2.5-immutability-elixir) artinya setelah data dideklarasikan, data tersebut tidak dapat **dimutasi/diubah lagi**.
+> Data di elixir bersifat [**immutable**](https://natserract.vercel.app/post/elixir-assignment) artinya setelah data dideklarasikan, data tersebut tidak dapat **dimutasi/diubah lagi**.
 
 ### Tuples
 Tuple merupakan kumpulan struktur data, biasanya digunakan untuk mengelompokkan/grouping suatu data tertentu. Tuple dapat menyimpan nilai apapun termasuk angka, atom, tuple lainnya, list, serta string. Ini memungkinkan Anda menggabungkan beberapa item menjadi satu [single composite data type](https://www.ibm.com/docs/en/tivoli-netcoolimpact/6.1.0?topic=types-working-composite-data). 
@@ -254,7 +254,7 @@ iex(27)> elem(person, 0)
 "Bob"
 ```
 
-Anda juga bisa menggunakan [pattern matching](/docs/C.2/C.2.3-pattern-matching.md) di dalam tuples:
+Anda juga bisa menggunakan [pattern matching](https://natserract.vercel.app/post/elixir-assignment) di dalam tuples:
 ```bash
 iex(20)> {status, count} = {:ok, 40}
 {:ok, 40}
