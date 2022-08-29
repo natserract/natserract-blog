@@ -170,6 +170,20 @@ else if (
 }
 ...
 ```
+Jadi dari validasi diatas ketika terjadi race conditions seperti ini:
+
+```ts
+- Order, Status: **Aktif**
+  - Unit 1:
+    - Status: **Transit for Outbound** // 1 (Highest)
+  - Unit 2 
+    - Status: **Rent in Progress** // 2
+  - Unit 3
+    - Status: **Preparing and Cleaning** // 3
+```
+
+Jika berdasarkan dari prioritas, maka hasilnya didapat nilai yang paling tinggi adalah `Transit For Outbound`
+
 > Semoga tim product happy ~ engineer happy -> customer happy!
 
 ## Optimization
