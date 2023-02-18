@@ -92,7 +92,7 @@ export default (theme: Theme) =>
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-between",
-      borderBottom: "solid 2px #1d1d27",
+      borderBottom: "double 3px #1d1d27",
       paddingBottom: "7px",
 
       [theme.breakpoints.only("xs")]: {
