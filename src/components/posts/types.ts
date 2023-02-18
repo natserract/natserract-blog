@@ -6,5 +6,6 @@ interface PostMetaI {
   excerpt: string;
   slug: string;
   date: Date;
+  author: string;
   [x: string]: any;
 }

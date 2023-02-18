@@ -1,6 +1,7 @@
 ---
 title: "Functional Programming Principles"
 date: "2022-06-05"
+author: "Alfin Surya"
 excerpt: "Secara harfiah pemrogaman fungsional adalah metode membangun program yang mengutamakan/menekankan fungsi dan aplikasinya. Dalam implementasinya, pemrogaman fungsional menerapkan penggunaan data yang tidak berubah, murni, fungsi transparan referensial, dan fungsi tingkat tinggi"
 coverImage: "https://withflint.com/static/images/blog/hiring-secret.jpeg"
 ---

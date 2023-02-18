@@ -19,6 +19,7 @@ export default (theme: Theme) =>
       listStyle: "none",
       padding: "0",
       margin: "0",
+      fontSize: 12,
 
       [theme.breakpoints.only("xs")]: {
         margin: "10px 0 0",
@@ -42,7 +43,7 @@ export default (theme: Theme) =>
       },
 
       "& h1": {
-        fontSize: "57px",
+        fontSize: "45px",
         fontWeight: 600,
         color: "#1d1d27",
 
@@ -53,7 +54,7 @@ export default (theme: Theme) =>
     },
     subTitle: {
       display: "block",
-      fontSize: "33px",
+      fontSize: "27px",
       fontWeight: "lighter",
       color: "#1d1d27",
       fontStyle: "italic",
@@ -80,12 +81,23 @@ export default (theme: Theme) =>
         },
 
         "& > a": {
-          fontSize: "17px",
+          fontSize: 13,
+          fontFamily: "sans-serif",
+          textTransform: "uppercase",
         },
       },
     },
     brandSection: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
       borderBottom: "solid 2px #1d1d27",
       paddingBottom: "7px",
+
+      [theme.breakpoints.only("xs")]: {
+        alignItems: "flex-start",
+        flexDirection: "column",
+      },
     },
   });

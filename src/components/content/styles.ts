@@ -2,18 +2,21 @@ export default (theme) => ({
   title: {
     lineHeight: "1.2",
     fontFamily: "sans-serif",
-    fontSize: "38px",
+    fontSize: "27px",
     fontWeight: 700,
     margin: "0 0 5px",
 
     [theme.breakpoints.only("xs")]: {},
   },
   content: {
+    fontFamily: "sans-serif",
+
     "& h2, h3, h4, h5, h6": {},
     "& h2": {
       marginTop: 30,
       position: "relative",
       display: "inline-block",
+      fontWeight: "bolder",
 
       "&:after": {
         content: `'¶'`,

@@ -8,7 +8,7 @@ import { useLoadingIndicator } from "~/src/hooks";
 import format from "date-fns/format";
 
 const useStyles = makeStyles(styles);
-const parseDate = (date: number | Date) => format(date, "MMMM YYYY");
+const parseDate = (date: number | Date) => format(date, "MMMM DD, YYYY");
 
 const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
   const classes = useStyles();
@@ -29,18 +29,24 @@ const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
           return (
             <li key={generateKey()} className={classes.posts}>
               <h3 className={`${classes.postsHeadContainer}`}>
-                <time className={classes.postDate}>{parseDate(date)}</time>
-                <Link href={`post/${slug}`}>
-                  <a onClick={loadingIndicator}>
-                    {title}
+                <div>
+                  <Link href={`post/${slug}`}>
+                    <a onClick={loadingIndicator}>{title}</a>
+                  </Link>
+                  {item?.favorite && item?.favorite === "yes" && (
+                    <span className={classes.favoriteIcon}>✨</span>
+                  )}
+                </div>
 
-                    {item?.favorite && item?.favorite === "yes" && (
-                      <span className={classes.favoriteIcon}>✨</span>
-                    )}
-                  </a>
-                </Link>
+                <div className={classes.metaInfo}>
+                  <span className={`${classes.divider} hidden-xs`}>-</span>
+                  <time className={classes.postDate}> {parseDate(date)}</time>
+                  <span className={classes.divider}>-</span>
+                  <span>
+                    by <i>{item?.author}</i>
+                  </span>
+                </div>
               </h3>
-              <span>{excerpt}...</span>
             </li>
           );
         })}

@@ -1,6 +1,7 @@
 ---
 title: "Elixir Data Types"
 date: "2022-08-29"
+author: "Alfin Surya"
 excerpt: "Elixir has weak dynamic types. But 'weak' doesn't imply bad"
 coverImage: "https://asset.kompas.com/crops/yVJe0Ygxfku1OKtSIwqdQxrKH_s=/0x0:978x652/750x500/data/photo/2018/05/20/2057564360.JPG"
 ---

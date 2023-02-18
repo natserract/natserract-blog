@@ -24,14 +24,21 @@ const Header: ComponentType<PropsI> = ({ title, menuItems }: PropsI) => {
             Software Engineer
           </Typography>
         </a>
+        {/* <NavigationMenu items={menuItems} /> */}
+        <nav className={classes.navigation}>
+          <div className={classes.navigationContainer}>
+            <NavigationMenu items={menuItems} />
+            <SocialMedia items={socialMediaItems} />
+          </div>
+        </nav>
       </div>
 
-      <nav className={classes.navigation}>
+      {/* <nav className={classes.navigation}>
         <div className={classes.navigationContainer}>
           <NavigationMenu items={menuItems} />
           <SocialMedia items={socialMediaItems} />
         </div>
-      </nav>
+      </nav> */}
     </header>
   );
 };

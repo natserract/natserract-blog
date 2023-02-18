@@ -5,7 +5,8 @@ export default (theme: Theme) =>
     footer: {
       display: "flex",
       alignItems: "center",
-      fontSize: "13px",
+      fontSize: "12px",
+      fontFamily: "sans-serif",
       lineHeight: "1.3em",
       textAlign: "left",
       maxWidth: 800,
