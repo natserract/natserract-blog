@@ -3,8 +3,9 @@ import { Theme, createStyles } from "@material-ui/core/styles";
 export default (theme: Theme) =>
   createStyles({
     posts: {
-      display: "block",
+      // display: "block",
       marginBottom: "7px",
+      listStyle: "circle",
 
       "& .cursor-loading": {
         cursor: "progress",
@@ -52,7 +53,7 @@ export default (theme: Theme) =>
       },
     },
     postListsContainer: {
-      paddingLeft: "0",
+      // paddingLeft: "0",
     },
     favoriteIcon: {
       paddingLeft: 5,
