@@ -60,6 +60,7 @@ export default (theme: Theme) =>
     },
     metaInfo: {
       display: "flex",
+      alignItems: "center",
 
       [theme.breakpoints.only("xs")]: {
         "& > .hidden-xs": {
