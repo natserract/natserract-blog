@@ -41,7 +41,7 @@ ul {
   }
 
   h2 {
-    font-size: 23px;
+    font-size: 25px;
   }
 }
 
@@ -62,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 23px;
+  font-size: 25px;
 }
 
 /* If you want to using pre wrap */
@@ -86,4 +86,8 @@ pre {
 
 strong {
   font-weight: bold;
+}
+
+code.hljs {
+  font-size: 13px;
 }
