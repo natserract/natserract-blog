@@ -162,7 +162,7 @@ with recursive curr_invoice as (
     ) o on o.id = i."orderId"
  where 
     i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
-    and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 day')):: timestamp
+    and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 :duration')):: timestamp
  ),
  prev_invoice as (
  select i.* from invoices i
@@ -170,7 +170,7 @@ with recursive curr_invoice as (
    select o.id, o."orderType" from orders o
   ) o on o.id = i."orderId"
  where 
-    i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 day')):: timestamp
+    i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 :duration')):: timestamp
     and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
  ),
  curr_product_item as (
