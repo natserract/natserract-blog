@@ -19,75 +19,73 @@ Case kali ini, buat sebuah fitur analitik detail pesanan dalam periode waktu **h
 
 ```sql
 select 
-	-- Today
-	sum(coalesce(curr_product_item.subtotal, 0)) as today_subtotal,
-	sum(coalesce(curr_addon.subtotal, 0)) as today_addon_subtotal,
-	sum(coalesce(curr_product_item.total, 0) + coalesce(curr_addon.total, 0)) as today_total,
-	-- Yesterday
-	sum(coalesce(prev_product_item.subtotal, 0)) as yesterday_subtotal,
-	sum(coalesce(prev_addon.subtotal, 0)) as yesterday_addon_subtotal,
-	sum(coalesce(prev_product_item.total, 0) + coalesce(prev_addon.total, 0)) as yesterday_total
+  sum(coalesce(curr_product_item.subtotal, 0)) as today_subtotal,
+  sum(coalesce(curr_addon.subtotal, 0)) as today_addon_subtotal,
+  sum(coalesce(curr_product_item.total, 0) + coalesce(curr_addon.total, 0)) as today_total,
+  sum(coalesce(prev_product_item.subtotal, 0)) as yesterday_subtotal,
+  sum(coalesce(prev_addon.subtotal, 0)) as yesterday_addon_subtotal,
+  sum(coalesce(prev_product_item.total, 0) + coalesce(prev_addon.total, 0)) as yesterday_total
 from invoices i 
-    left join (
-    	select 
-            ili.subtotal, 
-            ili.discount, 
-            (ili.subtotal - ili.discount) as total, 
-            i.id as invoiceid
-          from 
-            order_items oi 
-            inner join invoice_line_items ili on ili."orderItemId" = oi.id 
-            inner join invoices i on i.id = ili."invoiceId" 
-            where 
-            	i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
-            	and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 day')):: timestamp
-            	and oi."ownerType" = 'productItem'
-    ) curr_product_item on curr_product_item.invoiceid = i.id
-     left join (
-    	select 
-            ili.subtotal, 
-            ili.discount, 
-            (ili.subtotal - ili.discount) as total, 
-            i.id as invoiceid
-          from 
-            order_items oi 
-            inner join invoice_line_items ili on ili."orderItemId" = oi.id 
-            inner join invoices i on i.id = ili."invoiceId"
-            where 
-            	i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
-            	and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 day')):: timestamp
-            	and oi."ownerType" = 'addOn'
-    ) curr_addon on curr_addon.invoiceid = i.id
-    left join (
-    	select 
-            ili.subtotal, 
-            ili.discount, 
-            (ili.subtotal - ili.discount) as total, 
-            i.id as invoiceid
-          from 
-            order_items oi 
-            inner join invoice_line_items ili on ili."orderItemId" = oi.id 
-            inner join invoices i on i.id = ili."invoiceId" 
-            where 
-            	i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 day')):: timestamp
-            	and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
-            	and oi."ownerType" = 'productItem'
-    ) prev_product_item on prev_product_item.invoiceid = i.id
-     left join (
-    	select 
-            ili.subtotal, 
-            ili.discount, 
-            (ili.subtotal - ili.discount) as total, 
-            i.id as invoiceid
-          from 
-            order_items oi 
-            inner join invoice_line_items ili on ili."orderItemId" = oi.id 
-            inner join invoices i on i.id = ili."invoiceId"
-            where 
-            	i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 day')):: timestamp
-            	and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
-            	and oi."ownerType" = 'addOn'
-    ) prev_addon on prev_addon.invoiceid = i.id
+left join (
+    select 
+        ili.subtotal, 
+        ili.discount, 
+        (ili.subtotal - ili.discount) as total, 
+        i.id as invoiceid
+      from 
+        order_items oi 
+        inner join invoice_line_items ili on ili."orderItemId" = oi.id 
+        inner join invoices i on i.id = ili."invoiceId" 
+        where 
+            i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
+            and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 day')):: timestamp
+            and oi."ownerType" = 'productItem'
+) curr_product_item on curr_product_item.invoiceid = i.id
+ left join (
+    select 
+        ili.subtotal, 
+        ili.discount, 
+        (ili.subtotal - ili.discount) as total, 
+        i.id as invoiceid
+      from 
+        order_items oi 
+        inner join invoice_line_items ili on ili."orderItemId" = oi.id 
+        inner join invoices i on i.id = ili."invoiceId"
+        where 
+            i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
+            and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 day')):: timestamp
+            and oi."ownerType" = 'addOn'
+) curr_addon on curr_addon.invoiceid = i.id
+left join (
+    select 
+        ili.subtotal, 
+        ili.discount, 
+        (ili.subtotal - ili.discount) as total, 
+        i.id as invoiceid
+      from 
+        order_items oi 
+        inner join invoice_line_items ili on ili."orderItemId" = oi.id 
+        inner join invoices i on i.id = ili."invoiceId" 
+        where 
+            i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 day')):: timestamp
+            and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
+            and oi."ownerType" = 'productItem'
+) prev_product_item on prev_product_item.invoiceid = i.id
+ left join (
+    select 
+        ili.subtotal, 
+        ili.discount, 
+        (ili.subtotal - ili.discount) as total, 
+        i.id as invoiceid
+      from 
+        order_items oi 
+        inner join invoice_line_items ili on ili."orderItemId" = oi.id 
+        inner join invoices i on i.id = ili."invoiceId"
+        where 
+            i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 day')):: timestamp
+            and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
+            and oi."ownerType" = 'addOn'
+) prev_addon on prev_addon.invoiceid = i.id
 ```
 
 ### Problems
@@ -156,39 +154,44 @@ Faktanya susunan data / query dari sql ini isinya berupa struktur pohon dimana a
 
 ```sql
 with recursive curr_invoice as (
- select i.* from invoices i
-  inner join (
-     select o.id, o."orderType" from orders o
+    select i.* from invoices i
+    inner join (
+        select o.id, o."orderType" from orders o
     ) o on o.id = i."orderId"
- where 
+    where
     i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
     and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 :duration')):: timestamp
- ),
- prev_invoice as (
- select i.* from invoices i
-  inner join (
-   select o.id, o."orderType" from orders o
-  ) o on o.id = i."orderId"
- where 
+),
+prev_invoice as (
+    select i.* from invoices i
+    inner join (
+        select o.id, o."orderType" from orders o
+    ) o on o.id = i."orderId"
+    where
     i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 :duration')):: timestamp
     and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
- ),
- curr_product_item as (
-  select 
-   ...
-  from 
-    ...
-    inner join curr_invoice i on i.id = ili."invoiceId"
-  where oi."ownerType" = 'productItem'
- ),
- prev_product_item as (
-  select 
-   ...
-  from 
-    ...
-    inner join prev_invoice i_prev on i_prev.id = ili."invoiceId"
-  where oi."ownerType" = 'productItem'
- ) 
+),
+order_item as (
+    select
+        ili.subtotal as inv_subtotal,
+        ili.discount as inv_discount,
+        (ili.subtotal - ili.discount) as inv_total,
+        ili."invoiceId" as invoiceid,
+        oi."ownerType" as ownertype
+    from
+    order_items oi
+    inner join invoice_line_items ili on ili."orderItemId" = oi.id
+),
+curr_product_item as (
+    select * from order_item oi
+    inner join curr_invoice i on i.id = oi.invoiceid
+    where oi.ownertype = 'productItem'
+),
+prev_product_item as (
+    select * from order_item oi
+    inner join prev_invoice i_prev on i_prev.id = oi.invoiceid
+    where oi.ownertype = 'productItem'
+),
  -- ...similar ways for addon
 ```
 
