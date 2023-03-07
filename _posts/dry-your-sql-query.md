@@ -117,7 +117,7 @@ with curr_product_item as (
     inner join invoices i on i.id = ili."invoiceId" 
     where 
     	i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
-    	and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 day')):: timestamp
+    	and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta' + interval '1 :duration')):: timestamp
     	and oi."ownerType" = 'productItem'
 ), 
 prev_product_item as (
@@ -131,7 +131,7 @@ prev_product_item as (
     inner join invoice_line_items ili on ili."orderItemId" = oi.id 
     inner join invoices i on i.id = ili."invoiceId" 
     where 
-    	i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 day')):: timestamp
+    	i."postedDate" >= date_trunc('day', (now() at time zone 'Asia/Jakarta' - interval '1 :duration')):: timestamp
     	and i."postedDate" <= date_trunc('day', (now() at time zone 'Asia/Jakarta')):: timestamp
     	and oi."ownerType" = 'productItem'
  )
