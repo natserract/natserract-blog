@@ -40,10 +40,10 @@ Mereka mengatakan:
 > In Go, error handling is important. The language’s design and conventions encourage you to explicitly check for errors where they occur (as distinct from the convention in other languages of throwing exceptions and sometimes catching them). In some cases this makes Go code verbose, but fortunately there are some techniques you can use to minimize repetitive error handling.
 
 Kalau balik mundur sedikit, ada beberapa cara dalam menampilkan kesalahan di sebuah program:
-1. Error State
+1. **Error State**
    Bisa berupa http response code [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)), status nilai atau nilai kembalian 
-2. Exceptions [`throw` dan `try catch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
-3. Callback (NodeJS IO), dll
+2. **Exceptions** [`throw` dan `try catch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+3. **Callback** (NodeJS IO), dll
 
 Java, JavaScript umumnya menggunakan exceptions, sedangkan golang menggunakan pendekatan pertama. Cara diatas punya pros dan cons sendiri dan casenya masing2, tapi prinsip utama golang adalah kesederhanaan dan saya suka ini.  
 
@@ -187,13 +187,13 @@ try {
 ```
 
 ## Let's meet offensive!
-**Offensive programming** merupakan bagian dari defensive programming keduanya tidak bertentangan (kecuali namanya). Bedanya offensive berfokus pada kegagalan sesegera mungkin (**fail fast**). Tujuannya untuk mengidentifikasi kesalahan dengan cepat. 
+**Offensive programming** merupakan bagian dari defensive programming keduanya tidak bertentangan (kecuali namanya). Bedanya offensive berfokus pada kegagalan sesegera mungkin. Tujuannya untuk mengidentifikasi kesalahan dengan cepat. 
 
 Sedangkan, **defensive programming** lebih berfokus ke [fault tolerance](https://en.wikipedia.org/wiki/Fault_tolerance) artinya program akan selalu berjalan secara normal jika terjadi kegagalan atau kesalahan  apapun situasinya. Kode harus berfungsi apa pun masukannya. 
 
 > Contoh kasusnya mungkin kalkulasi perhitungan discount:
 
-**Penulisan defensive**
+**Penulisan defensive (fail safe)**
 ```ts
 // Price will not smaller than 0
 const price = Math.max(0, payload.price)
@@ -202,7 +202,7 @@ const price = Math.max(0, payload.price)
 const discount = Math.min(price, payload.discount)
 ```
 
-**Penulisan offensive**
+**Penulisan offensive (fail fast)**
 ```ts
  // Check price must be positive number;
 if (payload.price < 0) {
