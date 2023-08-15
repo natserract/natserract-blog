@@ -33,7 +33,7 @@ func CopyFile(src, dst string) error {
 	}
 }
 ```
-Karena latar belakangnya JavaScript dengan jargon [`throw` dan `try catch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) lihat kode golang cukup bikin bingung. `if err != nil` What?. Ini memang kelihatan make sense ya, dimana error kalau ga `null` ya berarti ada error. Tapi yang bikin saya penasaran adalah design dari bahasa golang itu sendiri dimana mereka menggunakan **[error sebagai nilai](https://go.dev/blog/errors-are-values)** ini adalah gaya bahasa pemrogaman di tahun 70-an dan diterapkan juga di bahasa C.
+Karena latar belakangnya JavaScript dengan jargon [`throw` dan `try catch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) lihat kode golang cukup bikin bingung. `if err != nil` What?. Ini memang kelihatan make sense ya, dimana error kalau ga `null` ya berarti ada error. Tapi yang bikin saya penasaran adalah design dari bahasa golang itu sendiri dimana mereka menggunakan **[error as a states](https://go.dev/blog/errors-are-values)** ini adalah gaya bahasa pemrogaman di tahun 70-an dan diterapkan juga dalam bahasa C.
 
 Mereka mengatakan:
 
