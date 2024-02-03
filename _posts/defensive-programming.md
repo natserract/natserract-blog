@@ -3,6 +3,7 @@ title: "Defensive Programming"
 date: "2023-07-04"
 author: "Alfin Surya"
 excerpt: "Zero trust even is you!"
+favorite: "yes"
 ---
 > Defensive programming mungkin pembaca disini sudah pernah mendengar atau _belum pernah mendengar tapi secara ga sadar udah pernah lakukan?_. Nah sebelum bahas lebih lanjut, saya mau cerita sedikit. 
 
