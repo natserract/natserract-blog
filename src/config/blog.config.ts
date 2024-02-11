@@ -1,9 +1,9 @@
 export const blogConfig = {
   url: "https://natserract.vercel.app/",
   shortName: "natserract",
-  title: "Natserract. Thoughts and links about everything | Personal Blog",
-  subtitle: "Jarrib walaahizh takun 'arifan.", // longDescription : appears in landing page meta description
-  description: "Thoughts and links about everything | Personal Blog",
+  title: "Natserract. Opinions Are My Own | Personal Blog",
+  subtitle: "Opinions are my own", // longDescription : appears in landing page meta description
+  description: "Opinions are my own | Personal Blog",
   author: "Alfin Surya",
   analytics: "", // put your google analytics code here to add tracking
   shareImage: "https://nextjs-mdx-blog-starter.now.sh/screenshot.png",

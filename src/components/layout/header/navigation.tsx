@@ -19,7 +19,7 @@ const NavigationMenu = ({ items }) => {
         items.map((menu) => (
           <li key={generateKey()}>
             <Link href={menu.path}>
-              <a onClick={loadingIndicator}>{menu.name}</a>
+              <a target={menu?.target || '_self'} onClick={menu?.target ? null : loadingIndicator}>{menu.name}</a>
             </Link>
           </li>
         ))}

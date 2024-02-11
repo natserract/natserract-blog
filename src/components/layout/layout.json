@@ -9,6 +9,11 @@
       "path": "/about"
     },
     {
+      "name": "Projects",
+      "path": "https://docs.google.com/document/d/13tsa4ked42AbLe7GjR5_05U-Pwizr8-IGGwvnD93Nx8/edit?usp=sharing",
+      "target": "_blank"
+    },
+    {
       "name": "Talks",
       "path": "/talks"
     },
