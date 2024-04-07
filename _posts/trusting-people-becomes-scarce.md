@@ -12,7 +12,7 @@ I really like this part, being a **listener**, hearing their stories and taking 
 
 However, I felt a little scared...
 
-I started thinking.. IS THIS ME? where other people become the priority, sacrificing myself for my expectations of them. I'm always trying to [please people](https://www.siloamhospitals.com/informasi-siloam/artikel/apa-itu-people-pleaser) around me, feeling responsible for their feelings, and afraid of disappointing them.
+I started thinking.. IS IT ME? where other people become the priority, sacrificing myself for my expectations of them. I'm always trying to [please people](https://www.siloamhospitals.com/informasi-siloam/artikel/apa-itu-people-pleaser) around me, feeling responsible for their feelings, and afraid of disappointing them.
 
 When they started feeling comfortable enough, they got more than they wanted. It gets to where they get caught up in their own mistakes and then treat others for their own gain. Everything's fake!
 
@@ -34,7 +34,7 @@ In this noisy world, I have learned from myself-that, this is something that has
 
 Basically, I was brought together with these people for a reason. **Good people give you happiness, bad people give you experience, the worst people give you a lesson, and the best people give you memories.**
 
-I've found myself; I need to look around with colored glasses. **You are not what others think you are!** Everyone has a different perspective, lower your ego and expectations of others. 
+I've found myself; I need to look around with colored glasses. **You are not what others think you are!** Everyone has a different perspective, lower your ego and expectations of others.
 
 This is the dynamic of social interaction. So unique! Patience, sincerity and honesty are so tested, **"And we have made some of you a trial for others. Will you not then be patient? And your Lord is All-Seeing. (Al-Furqan:20)**
 .
@@ -48,4 +48,3 @@ This is the dynamic of social interaction. So unique! Patience, sincerity and ho
 .
 
 _To this day, I am still learning..._
-

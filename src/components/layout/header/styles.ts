@@ -81,8 +81,7 @@ export default (theme: Theme) =>
         },
 
         "& > a": {
-          fontSize: 13,
-          fontFamily: "sans-serif",
+          fontSize: 14,
           textTransform: "uppercase",
         },
       },

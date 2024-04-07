@@ -1,19 +1,20 @@
 export default (theme) => ({
   title: {
     lineHeight: "1.2",
-    fontFamily: "sans-serif",
-    fontSize: "27px",
+    fontSize: "30px",
     fontWeight: 700,
+    fontFamily: '"Roboto", sans-serif',
     margin: "0 0 5px",
 
     [theme.breakpoints.only("xs")]: {},
   },
   content: {
-    fontFamily: "sans-serif",
+    fontSize: "18px",
 
-    "& h2, h3, h4, h5, h6": {},
-    "& h2": {
+    "& h2, h3, h4, h5, h6": {
       marginTop: 30,
+    },
+    "& h2": {
       position: "relative",
       display: "inline-block",
       fontWeight: "bolder",
@@ -21,16 +22,24 @@ export default (theme) => ({
       "&:after": {
         content: `'¶'`,
         position: "absolute",
+        fontFamily: '"Abhaya Libre", serif',
         right: -33,
         width: 15,
         height: 30,
+        top: "-4px",
+        bottom: 0,
         color: "#DDD",
+        fontSize: 35,
       },
     },
     "& blockquote": {
       borderLeft: "solid 4px #d2d6db",
-      padding: "0 0 0 20px",
-      margin: "30px 0",
+      background: "#f9f9f9",
+      padding: "15px 15px 15px 25px",
+      margin: "15px 0 30px",
+    },
+    "& blockquote p": {
+      margin: "0",
     },
     "& code:not(.hljs)": {
       padding: ".2em .4em",
@@ -53,14 +62,14 @@ export default (theme) => ({
       opacity: "0.5",
     },
     "& ol": {
-      padding: "0 0 0 30px",
+      padding: "0 0 10px 30px",
 
       "& li": {
         marginBottom: 7,
       },
     },
     "& ul": {
-      padding: "0 0 0 30px",
+      padding: "0 0 10px 30px",
 
       "& li": {
         marginBottom: 7,
@@ -90,6 +99,8 @@ export default (theme) => ({
   },
   postCoverImg: {
     margin: "17px 0 30px",
+    maxHeight: "500px",
+    objectFit: "cover",
   },
   titleContainer: {
     margin: "20px 0 25px",

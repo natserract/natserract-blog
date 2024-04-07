@@ -1,48 +1,49 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  background-color: #fff;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  font-family: Times New Roman,serif;
-  color: black;
-  line-height: 1.6em;
+    background-color: #fff;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    color: black;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6em;
 }
 
 body.loading-indicator {
-  cursor: progress;
+    cursor: progress;
 }
 
 a {
-  color: rgb(2, 131, 242);
-  text-decoration: none;
+    color: rgb(2, 131, 242);
+    text-decoration: none;
 }
 
 a:hover {
-  color: rgba(73, 100, 149, 0.97);
-  text-decoration: underline;
+    color: rgba(73, 100, 149, 0.97);
+    text-decoration: underline;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul {
-  padding-left: 15px;
+    padding-left: 15px;
 }
 
 @media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 40px;
-  }
+    h1 {
+        font-size: 40px;
+    }
 
-  h2 {
-    font-size: 25px;
-  }
+    h2 {
+        font-size: 25px;
+    }
 }
 
 h1,
@@ -51,43 +52,44 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -0.7px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  font-family: "Abhaya Libre", serif;
+    letter-spacing: -0.7px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 /* If you want to using pre wrap */
 pre {
-  /* white-space: pre-wrap; */
-  /* Since CSS 2.1 */
-  /* white-space: -moz-pre-wrap; */
-  /* Mozilla, since 1999 */
-  /* white-space: -pre-wrap; */
-  /* Opera 4-6 */
-  /* white-space: -o-pre-wrap; */
-  /* Opera 7 */
-  /* word-wrap: break-word; */
-  /* Internet Explorer 5.5+ */
+    /* white-space: pre-wrap; */
+    /* Since CSS 2.1 */
+    /* white-space: -moz-pre-wrap; */
+    /* Mozilla, since 1999 */
+    /* white-space: -pre-wrap; */
+    /* Opera 4-6 */
+    /* white-space: -o-pre-wrap; */
+    /* Opera 7 */
+    /* word-wrap: break-word; */
+    /* Internet Explorer 5.5+ */
 }
 
 ::selection {
-  background: #1d1d27;
-  color: #fff;
+    background: #1d1d27;
+    color: #fff;
 }
 
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 code.hljs {
-  font-size: 13px;
+    font-size: 15px;
+    margin-bottom: 30px;
 }

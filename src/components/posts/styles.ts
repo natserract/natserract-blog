@@ -4,7 +4,7 @@ export default (theme: Theme) =>
   createStyles({
     posts: {
       // display: "block",
-      marginBottom: "7px",
+      marginBottom: "5px",
       listStyle: "circle",
 
       "& .cursor-loading": {
@@ -53,7 +53,7 @@ export default (theme: Theme) =>
       },
     },
     postListsContainer: {
-      // paddingLeft: "0",
+      margin: "10px 0",
     },
     favoriteIcon: {
       paddingLeft: 5,

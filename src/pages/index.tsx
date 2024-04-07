@@ -22,10 +22,6 @@ const Home = ({ allPosts }) => {
   return (
     <Layout>
       <div className={classes.blogSection}>
-        <Typography variant="h3" component="h2">
-          Bλog Posts
-          <span className={classes.toc}>(favorites have sparkles)</span>
-        </Typography>
         <Posts data={allPosts} />
       </div>
     </Layout>
