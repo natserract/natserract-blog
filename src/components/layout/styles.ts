@@ -21,7 +21,7 @@ export default (theme: Theme) =>
     },
 
     contentContainer: {
-      padding: ".5em 0 2em",
+      padding: ".5em 0 4em",
 
       "& img": {
         display: "block",

@@ -1,13 +1,12 @@
 import React from "react";
 import { getPostBySlug, getAllPosts } from "../../../lib";
 import markdownToHtml from "../../../lib/markdownToHtml";
-import Box from "@material-ui/core/Box";
 import Layout from "~/src/components/layout";
 import Content from "~/src/components/content";
 
 const Post = ({ post }) => {
   if (!post) {
-    return <Box>Post is undefined</Box>;
+    return <div>Post is undefined</div>;
   }
 
   return (
@@ -18,7 +17,7 @@ const Post = ({ post }) => {
 };
 
 export async function getStaticProps({ params }) {
-  const post: PostI = getPostBySlug(params.slug, [
+  const post: any = getPostBySlug(params.slug, [
     "title",
     "excerpt",
     "date",

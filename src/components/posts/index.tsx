@@ -10,7 +10,7 @@ import format from "date-fns/format";
 const useStyles = makeStyles(styles);
 const parseDate = (date: number | Date) => format(date, "MMMM DD, YYYY");
 
-const Posts: ComponentType<PropsI> = ({ data }: PropsI) => {
+const Posts: React.FC<PropsI> = ({ data }: PropsI) => {
   const classes = useStyles();
 
   const [loadingState, setLoadingState] = useState(false);

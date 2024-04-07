@@ -7,7 +7,7 @@ interface PropsI {
 
 const useStyles = makeStyles(styles);
 
-const Footer: ComponentType<PropsI> = ({ content }: PropsI) => {
+const Footer: React.FC<PropsI> = ({ content }: PropsI) => {
   const classes = useStyles();
 
   return (

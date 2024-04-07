@@ -2,10 +2,7 @@ import { AppProps } from "next/app";
 import defaultTheme from "../config/mui-theme.config";
 import { ThemeProvider } from "@material-ui/core/styles";
 import Head from "next/head";
-import {
-  createMuiTheme as createTheme,
-  responsiveFontSizes,
-} from "@material-ui/core/styles";
+import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import "../styles/globals.css";
 import React from "react";
 
@@ -64,7 +61,8 @@ function App({ Component, pageProps }: AppProps) {
       <HeadDocument />
       <ThemeProvider theme={theme}>
         <div suppressHydrationWarning style={{ position: "relative" }}>
-          {typeof window === "undefined" ? null : <Component {...pageProps} />}
+          {/* @ts-ignore */}
+          <Component {...pageProps} />
         </div>
       </ThemeProvider>
     </React.Fragment>

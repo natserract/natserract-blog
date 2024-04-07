@@ -1,26 +1,4 @@
-const Dotenv = require("dotenv-webpack");
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-module.exports = {
-  webpack(config, { isServer }){
-    config.plugins.push(new Dotenv({ silent: true }));
-    config.module.rules.push(
-      {
-        test: /\.md$/,
-        loader: 'frontmatter-markdown-loader',
-        options: { mode: ['react-component'] }
-      }
-    )
-
-    if (!isServer) {
-      config.node = {
-        fs: "empty",
-      }
-    }
-
-    return config;
-  },
-  
-  webpackDevMiddleware(config){
-    return config;
-  },
-};
+module.exports = nextConfig;

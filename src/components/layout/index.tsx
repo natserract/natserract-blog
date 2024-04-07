@@ -17,7 +17,7 @@ const config = {
 const useStyles = makeStyles(styles);
 const footerContent = `© ${config.year}, ${config.author}. Opinions are my own.`;
 
-const Layout: React.FC = (props) => {
+const Layout: React.FC<React.PropsWithChildren<{}>> = (props) => {
   const classes = useStyles();
   const ref = useRef(null);
 

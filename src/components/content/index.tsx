@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "./styles";
-import { DiscussionEmbed } from "disqus-react";
 import { blogConfig } from "~/src/config";
 import Typography from "@material-ui/core/Typography";
 
@@ -10,6 +9,7 @@ import format from "date-fns/format";
 
 const isPostPage = (pathname: string) => pathname.includes("post");
 const parseDate = (date: number | Date) => format(date, "MMMM DD, YYYY");
+// @ts-ignore
 const useStyles = makeStyles(styles);
 
 const Content = ({ data }) => {

@@ -3,7 +3,7 @@ import styles from "./styles";
 import Typography from "@material-ui/core/Typography";
 import NavigationMenu from "./navigation";
 import SocialMedia from "./social-media";
-import { socialMediaItems } from "./data.json";
+import data from "./data.json";
 
 interface PropsI {
   title: string;
@@ -12,7 +12,7 @@ interface PropsI {
 
 const useStyles = makeStyles(styles);
 
-const Header: ComponentType<PropsI> = ({ title, menuItems }: PropsI) => {
+const Header: React.FC<PropsI> = ({ title, menuItems }: PropsI) => {
   const classes = useStyles();
 
   return (
@@ -28,7 +28,7 @@ const Header: ComponentType<PropsI> = ({ title, menuItems }: PropsI) => {
         <nav className={classes.navigation}>
           <div className={classes.navigationContainer}>
             <NavigationMenu items={menuItems} />
-            <SocialMedia items={socialMediaItems} />
+            <SocialMedia items={data.socialMediaItems} />
           </div>
         </nav>
       </div>

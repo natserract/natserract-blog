@@ -1,7 +1,6 @@
 import React from "react";
 import { getPostBySlug, getAllPosts } from "../../../lib";
 import markdownToHtml from "../../../lib/markdownToHtml";
-import Box from "@material-ui/core/Box";
 import Layout from "~/src/components/layout";
 import Content from "~/src/components/content";
 
@@ -9,7 +8,7 @@ const pathDirectory = "../src/pages/contributing/_contributing";
 
 const Contributing = ({ post }) => {
   if (!post) {
-    return <Box>Post is undefined</Box>;
+    return <div>Post is undefined</div>;
   }
 
   return (
@@ -20,7 +19,7 @@ const Contributing = ({ post }) => {
 };
 
 export async function getStaticProps() {
-  const post: PostI = getPostBySlug(pathDirectory, [
+  const post: any = getPostBySlug(pathDirectory, [
     "title",
     "excerpt",
     "date",
